@@ -6,7 +6,7 @@ Sometimes I start working on a *wrong branch* of the project. But uncommitted ch
   ```Shell
   $ git add .
   ```
-* *Stash* the contents of the *staging area*
+* *Stash* the contents of the *staging area* and thhe *working tree*
   ```Shell
   $ git stash
   ```
