@@ -2,6 +2,7 @@
 
 Brief notes and short code examples.
 
+* [Print Python Standard Library exception tree](python-exception-tree.md)
 * [Atom `tool-bar` package iconset location](atom-tool-bar-package.md)
 * [Three little gems from the Python's `math` module](python-math.md)
 * [Move uncomitted changes between Git branches](git-stash.md)
