@@ -2,6 +2,7 @@
 
 Brief notes and short code examples.
 
+* [WSL open Explorer from the current working directory](wsl-open-explorer-cwd.md)
 * [Print Python Standard Library exception tree](python-exception-tree.md)
 * [Atom `tool-bar` package iconset location](atom-tool-bar-package.md)
 * [Three little gems from the Python's `math` module](python-math.md)
