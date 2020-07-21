@@ -2,6 +2,7 @@
 
 Brief notes and short code examples.
 
+* [Serve Markdown as HTML with live-reloading](npm-serve-markdown.md)
 * [WSL open Explorer from the current working directory](wsl-open-explorer-cwd.md)
 * [Print Python Standard Library exception tree](python-exception-tree.md)
 * [Atom `tool-bar` package iconset location](atom-tool-bar-package.md)
