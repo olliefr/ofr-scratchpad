@@ -2,6 +2,7 @@
 
 Brief notes and short code examples.
 
+* [No-SSH approach for `git` and GitHub under Linux](wsl-git-github-https.md)
 * [A billion ways to run code in Windows](windows-autoruns.md)
 * [Make `sudo` stop asking for password](sudo-authenticate.md)
 * [Serve Markdown as HTML with live-reloading](npm-serve-markdown.md)
