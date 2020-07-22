@@ -2,6 +2,7 @@
 
 Brief notes and short code examples.
 
+* [A billion ways to run code in Windows](windows-autoruns.md)
 * [Make `sudo` stop asking for password](sudo-authenticate.md)
 * [Serve Markdown as HTML with live-reloading](npm-serve-markdown.md)
 * [WSL open Explorer from the current working directory](wsl-open-explorer-cwd.md)
