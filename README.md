@@ -2,6 +2,7 @@
 
 Brief notes and short code examples.
 
+* [Change file name encoding using Python](python-recode-filenames.md)
 * [Profiling Python scripts](python-profilers.md)
 * [Cloud technology vendors](cloud-vendors.md)
 * [Output to `stderr` in Python](python-output-stderr.md)
