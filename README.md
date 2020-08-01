@@ -2,6 +2,7 @@
 
 Brief notes and short code examples.
 
+* [Profiling Python scripts](python-profilers.md)
 * [Output to `stderr` in Python](python-output-stderr.md)
 * [Python's main function](python-main.md)
 * [Stop using SSL](ssl-tls.md)
