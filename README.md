@@ -3,6 +3,7 @@
 Brief notes and short code examples.
 
 * [Profiling Python scripts](python-profilers.md)
+* [Cloud technology vendors](cloud-vendors.md)
 * [Output to `stderr` in Python](python-output-stderr.md)
 * [Python's main function](python-main.md)
 * [Stop using SSL](ssl-tls.md)
