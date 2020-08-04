@@ -2,6 +2,7 @@
 
 Brief notes and short code examples.
 
+* [Run PowerShell scripts unhindered](powershell-set-exec-policy.md)
 * [How to profile memory usage in Python](python-profile-memory-usage.md)
 * [Change file name encoding using Python](python-recode-filenames.md)
 * [Profiling Python scripts](python-profilers.md)
