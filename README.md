@@ -2,6 +2,7 @@
 
 Brief notes and short code examples.
 
+* [Print directory tree in Linux](linux-print-directory-tree.md)
 * [Handling *leap seconds* with Network Time Protocol (NTP)](ntp.md)
 * [Run PowerShell scripts unhindered](powershell-set-exec-policy.md)
 * [How to profile memory usage in Python](python-profile-memory-usage.md)
