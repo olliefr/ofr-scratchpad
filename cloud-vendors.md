@@ -6,15 +6,45 @@ This is an **incomplete** list of Cloud-related technology providers, both hardw
 
 ## Infrastructure
 
-* [Amazon Web Services (AWS)](https://aws.amazon.com/)
+* [Amazon Web Services (AWS)](https://aws.amazon.com/) has *Amazon EC2: Elastic Compute Cloud*
 * [Google Cloud](https://cloud.google.com/)
 * [Microsoft Azure](https://azure.microsoft.com/en-gb/)
 * [Joyent](https://www.joyent.com/) provides managed private clouds, hosted or on-premise.
 
+## Network
+
+* [OpenFlow](https://en.wikipedia.org/wiki/OpenFlow) is a communications protocol that gives access to the forwarding plane of a network switch or router over the network. It is crucial to the whole *Software-Defined Networking* enterprise.
+
 ## Container orchestration
 
+* [Docker Swarm](https://docs.docker.com/engine/swarm/) is a native container orchestration solution from [Docker, Inc](https://www.docker.com/).
 * [Kubernetes](https://kubernetes.io/) is an open-source system for automating deployment, scaling, and management of containerized applications.
 * [k3s](https://k3s.io/) is a highly available, certified Kubernetes distribution designed for production workloads in unattended, resource-constrained, remote locations or inside IoT appliances. Optimized for ARM.
+* Apache [Mesos](https://mesos.apache.org/) is a *distributed systems kernel*. It allows to program against the datacenter like it’s a single pool of resources (RAM, CPU, etc). It provides functionality that crosses between IaaS and PaaS.
+    * D2iQ [MesoSphere](https://d2iq.com/solutions/mesosphere/dcos) offers a commercial solution on top of Apache Mesos.
+    * [DC/OS](https://dcos.io/) has been open-sourced by D2iQ. They also provide a commercial version of it.
+    * [Marathon](https://mesosphere.github.io/marathon/) is a production-grade container orchestration platform for DC/OS and Apache Mesos.
+* Hashicorp [Nomad] is a cluster manager and resource scheduler. Containers, VMs, individual applications, etc...
+* Amazon [ECS] elastic cloud service (not Kubernetes). Offers Fargate service which figures out the provisioning automatically, only container images have to be provided by the customer.
+
+## Service discovery
+
+* Hashicorp [Consul](https://www.hashicorp.com/products/consul)
+
+## Hosted services and solutions
+
+### Kubernetes
+
+There is a notion of a *certified* hosted Kubernetes platform.
+
+* [Amazon Elastic Kubernetes Service](https://aws.amazon.com/eks/) (Amazon EKS)
+* [Azure Kubernetes Service](https://azure.microsoft.com/en-us/services/kubernetes-service/) (AKS)
+* [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine/) (GKE)
+* [IBM Cloud Kubernetes Service](https://www.ibm.com/cloud/container-service/)
+* [NetApp Project Astra](https://cloud.netapp.com/project-astra)
+* [Oracle Container Engine for Kubernetes](https://www.oracle.com/cloud/compute/container-engine-kubernetes.html)
+* [RedHat OpenShift](https://www.openshift.com/products)
+* [VMWare Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid) (TKG)
 
 ## "*Cloud Native*"
 
@@ -61,5 +91,17 @@ These tools allow us to define the desired state of the systems in an automated 
 * [Chef](https://www.chef.io/products/automate)
 * [Puppet](https://puppet.com/)
 * [Salt](https://www.saltstack.com/)
+
+## Monitoring and Security
+
+* [DataDog](https://www.datadoghq.com/) provides intelligent application and service monitoring, particularly suited for debugging microservices.
+* [sysdig](https://sysdig.com/) scans for vulnerabilities and provides a view inside containers to alert on anomalous behavior and application health issues. It allows very rapid container and Kubernetes visibility and security onboarding.
+* Hashicorp [Vault](https://www.vaultproject.io/) secrets management
+
+## Algorithms
+
+This is not a *vendor*, but I have no better place to record this for now.
+
+* [Raft consensus algorithm](https://raft.github.io/) is used by *Docker Swarm Manager* nodes to maintain the cluster state.
 
 &mdash; Oliver Frolovs, 2020
