@@ -28,4 +28,6 @@ Source: Google Cloud Platform [announcement](https://cloud.google.com/blog/produ
 
 This means the service is useful for anyone who would like to keep local clocks in sync with VM instances running on Google Compute Engine, to match the time used by Google APIs, or for those who just need a reliable time service.
 
+**WARNING:** Don’t mix smearing and non-smearing time servers.
+
 &mdash; Oliver Frolovs, 2020
