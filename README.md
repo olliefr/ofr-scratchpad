@@ -2,6 +2,7 @@
 
 Brief notes and short code examples.
 
+* [Copying files with complex names using `scp`](scp-complex-file-names.md)
 * [Print directory tree in Linux](linux-print-directory-tree.md)
 * [Handling *leap seconds* with Network Time Protocol (NTP)](ntp.md)
 * [Run PowerShell scripts unhindered](powershell-set-exec-policy.md)
