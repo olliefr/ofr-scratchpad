@@ -88,4 +88,8 @@ To leave the *virtual environment*, run `deactivate`:
 
 This will take you to the familiar `bash` prompt outside of the Python *virtual environment*.
 
+## More information on the virtual environments
+
+[RealPython's _What Virtual Environments Are Good For?_](https://realpython.com/lessons/what-virtual-environments-are-good-for/) and the materials linked from there.
+
 &mdash;Oliver Frolovs, 2020
