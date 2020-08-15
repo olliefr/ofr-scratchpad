@@ -2,6 +2,7 @@
 
 Brief notes and short code examples.
 
+* [Cowsay a fortune in colour on login](linux-fortune-cowsay-lolcat.md)
 * [Storing configuration in a class in Python](python-class-as-config.md)
 * [WSL configuration](wsl-config-files.md)
 * [Copying files with complex names using `scp`](scp-complex-file-names.md)
