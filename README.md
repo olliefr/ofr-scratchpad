@@ -14,7 +14,7 @@ Brief notes and short code examples.
 * [Profiling Python scripts](python-profilers.md)
 * [Cloud technology vendors](cloud-vendors.md)
 * [Output to `stderr` in Python](python-output-stderr.md)
-* [Python's main function](python-main.md)
+* [Where's `main()` function in a Python script?](python-main.md)
 * [Stop using SSL](ssl-tls.md)
 * [No-SSH approach for `git` and GitHub under Linux](wsl-git-github-https.md)
 * [A billion ways to run code in Windows](windows-autoruns.md)
