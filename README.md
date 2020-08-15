@@ -2,6 +2,7 @@
 
 Brief notes and short code examples.
 
+* [Setting up a productive Python environment](python-productivity.md)
 * [Cowsay a fortune in colour on login](linux-fortune-cowsay-lolcat.md)
 * [Storing configuration in a class in Python](python-class-as-config.md)
 * [WSL configuration](wsl-config-files.md)
