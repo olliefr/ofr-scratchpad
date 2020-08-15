@@ -18,11 +18,17 @@ $ pip3 install ipython
 
 Now `ipython` command is available and should be used for interactive work instead of standard `python` interpreter CLI.
 
-## Setting up the virtual environment
+## Why set up virtual environments?
 
 The Python package manager `pip` by default installs (and updates) packages globally. This is not optimal since different programs may rely on different versions of the same package.
 
-To resolve this, Python includes powerful tools to *manage dependencies* of our programs.
+Furthermore, different versions of the *Python intepreter itself* might be required for different projects.
+
+To resolve this, Python includes powerful tools to *manage dependencies* of our programs by creating *virtual environments*. 
+
+The _virtual environment configuration_ file would store what Python interpreter version is used, as well as all PyPI modules utilised in the project and their version numbers.
+
+## Setting up the virtual environment
 
 This is done on per project basis. To create the environment:
 
@@ -41,8 +47,18 @@ Now can activate the environment:
 
 ```Shell
 project-folder$ source env/bin/activate
+```
+
+The shell prompt gets replaced by the environment's shell prompt:
+
+```Shell
 (env) $
 ```
+
+
+Note, that the directories and files comprising the *virtual environment* itself are automatically added to the `.gitignore` file and will not be (and should not be) checked into the revision control system.
+
+In other words, only the *virtual environment* configuration will be stored in the revision control system, and when necessary, the *virtual environment* will be recreated by the Python tools.
 
 ## Using the virtual environment
 
