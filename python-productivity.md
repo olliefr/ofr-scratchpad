@@ -70,13 +70,21 @@ For example, install the `requests` module into the current *environment* (proje
 (env) $ pip install requests
 ```
 
-Remember what packages are installed so that this information can be stored under revision control and used for deployment as well:
+To take inventory of the installed modules run:
 
 ```Shell
 (env) $ pip freeze > requirements.txt
 ```
 
-The `requirements.txt` appears to be a magic name `pip` and other Python tooling know about. It should be stored in the _revision control system_ and will be useful for deploying an application to _production_.
+The file name `requirements.txt` is a convention. This file should be stored in the _revision control system_ and it will be useful for setting up *identical environment* on a different machine.
+
+To install the modules to the requirements listed in `requirements.txt`, run the following command in a new *virtual environment*, potentially on a different machine:
+
+```Shell
+(env) $ pip install -r requirements.txt
+```
+
+The file `requirements.txt` usually stores _everything necessary to develop and test_ the application. This is often _more_ than what would be included in the _shipped application_.
 
 ## Leaving the virtual environment
 
