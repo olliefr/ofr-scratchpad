@@ -2,7 +2,24 @@
 
 This is an **incomplete** list of Cloud-related technology providers, both hardware and software. It is continuously updated as I find new vendors.
 
-* **TODO** change categories to labels because a tree is not a good representation for a complex landscape of technology vendors
+* [Cloud Native Computing Foundation](https://www.cncf.io/)
+
+<details>
+<summary>**TODO** change categories to labels</summary>
+
+Because a tree is not a good representation for a complex landscape of technology vendors.
+</details>
+
+<details>
+<summary>**TODO** document these terms (details)</summary>
+rook, locksmith, vulcand, Doorman, CoreDNS, and OpenStack. 
+</details>
+
+<details>
+    <summary>[Serf](https://www.serf.io/) by HashiCorp</summary>
+    
+    Decentralized Cluster Membership, Failure Detection, and Orchestration.
+</details>
 
 ## Infrastructure
 
@@ -10,6 +27,59 @@ This is an **incomplete** list of Cloud-related technology providers, both hardw
 * [Google Cloud](https://cloud.google.com/)
 * [Microsoft Azure](https://azure.microsoft.com/en-gb/)
 * [Joyent](https://www.joyent.com/) provides managed private clouds, hosted or on-premise.
+* [Alibaba Cloud](https://www.alibabacloud.com/)
+* IBM Clooud
+* Oracle Cloud
+
+## Infrastructure as a Service (IaaS)
+
+<details>
+    <summary>[Terraform](https://www.terraform.io/) by HashiCorp</summary>
+    Terraform allows infrastructure to be expressed as code in a simple, human readable language called HCL (HashiCorp Configuration Language). Terraform CLI reads configuration files and provides an execution plan of changes, which can be reviewed for safety and then applied and provisioned. Extensible providers allow Terraform to manage a broad range of resources, including hardware, IaaS, PaaS, and SaaS services.
+</details>
+
+<details>
+    <summary>[BOSH](https://bosh.io/) by Cloud Foundry</summary>
+    BOSH is a project that unifies release engineering, deployment, and lifecycle management of small and large-scale cloud software. BOSH can provision and deploy software over hundreds of VMs. It also performs monitoring, failure recovery, and software updates with zero-to-minimal downtime.
+
+    While BOSH was developed to deploy Cloud Foundry PaaS, it can also be used to deploy almost any other software (Hadoop, for instance). BOSH is particularly well-suited for large distributed systems. In addition, BOSH supports multiple Infrastructure as a Service (IaaS) providers like VMware vSphere, Google Cloud Platform, Amazon Web Services EC2, Microsoft Azure, OpenStack, and Alibaba Cloud. There is a Cloud Provider Interface (CPI) that enables users to extend BOSH to support additional IaaS providers such as Apache CloudStack and VirtualBox.
+</details>
+
+<details>
+    <summary>[CloudFormation](https://aws.amazon.com/cloudformation/) by Amazon AWS</summary>
+    AWS CloudFormation provides a common language for you to model and provision AWS and third party application resources in your cloud environment. AWS CloudFormation allows you to use programming languages or a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all regions and accounts. This gives you a single source of truth for your AWS and third party resources. 
+</details>
+
+## Key-value pair store
+
+**!!!** Note how much of very advanced functionality is enabled by the *KV pair stores*
+
+<details>
+    <summary>[etcd](https://etcd.io/)</summary>
+    
+    A distributed, reliable key-value store for the most critical data of a distributed system
+</details>
+
+<details>
+    <summary>[Consul](https://www.consul.io/) by HashiCorp</summary>
+    Consul is a service mesh solution providing a full featured control plane with service discovery, configuration, and segmentation functionality. Each of these features can be used individually as needed, or they can be used together to build a full service mesh. Consul requires a data plane and supports both a proxy and native integration model. Consul ships with a simple built-in proxy so that everything works out of the box, but also supports 3rd party proxy integrations such as Envoy.
+    
+    Other than providing a distributed key-value store, it also provides features like:
+    
+    * Service discovery (with DNS or HTTP) 
+    * Health checks for services and nodes
+    * Network infrastructure automation
+    * Multi-platform service mesh
+
+    Consul is built on top of [Serf](https://www.serf.io/)
+</details>
+
+<details>
+    <summary>[ZooKeeper](https://zookeeper.apache.org/) by Apache</summary>
+    
+    ZooKeeper is a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services. All of these kinds of services are used in some form or another by distributed applications. Each time they are implemented there is a lot of work that goes into fixing the bugs and race conditions that are inevitable. Because of the difficulty of implementing these kinds of services, applications initially usually skimp on them, which make them brittle in the presence of change and difficult to manage. Even when done correctly, different implementations of these services lead to management complexity when the applications are deployed.
+</details>
+
 
 ## Network
 
@@ -76,6 +146,10 @@ In the *Cloud Native* approach, we design a package and run applications on top 
 
   It is an open source multi-cloud continuous delivery platform from Netflix for releasing software changes with high velocity. It supports all the major cloud providers like Amazon Web Services, Microsoft Azure, Google Cloud Platform, and OpenStack. It supports Kubernetes natively. Spinnaker is a graduated project of CD Foundation.
 
+## REST APIs
+
+* [Swagger](https://swagger.io/) is an open-source software set of tools to design, build, document, and use RESTful web services, developed by [SmartBear Software](https://smartbear.com/). It includes automated documentation, code generation, and test-case generation. 
+
 ## GitOps
 
 * [Weave Flux](https://www.weave.works/oss/flux/) enables continuous delivery of container images, using version control for each step to ensure deployment is reproducible, auditable and revertible.
@@ -96,7 +170,7 @@ These tools allow us to define the desired state of the systems in an automated 
 
 * [DataDog](https://www.datadoghq.com/) provides intelligent application and service monitoring, particularly suited for debugging microservices.
 * [sysdig](https://sysdig.com/) scans for vulnerabilities and provides a view inside containers to alert on anomalous behavior and application health issues. It allows very rapid container and Kubernetes visibility and security onboarding.
-* Hashicorp [Vault](https://www.vaultproject.io/) secrets management
+* [Vault](https://www.vaultproject.io/) by HashiCorp (secrets management)
 
 ## Algorithms
 
