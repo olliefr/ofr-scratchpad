@@ -2,6 +2,7 @@
 
 Brief notes and short code examples.
 
+* [HTML character entities](html-entitties.md)
 * [Install PrinceXML in WSL Ubuntu Linux](princexml-linux.md)
 * [Setting up a productive Python environment](python-productivity.md)
 * [Cowsay a fortune in colour on login](linux-fortune-cowsay-lolcat.md)
