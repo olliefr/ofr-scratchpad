@@ -171,6 +171,7 @@ These tools allow us to define the desired state of the systems in an automated 
 * [DataDog](https://www.datadoghq.com/) provides intelligent application and service monitoring, particularly suited for debugging microservices.
 * [sysdig](https://sysdig.com/) scans for vulnerabilities and provides a view inside containers to alert on anomalous behavior and application health issues. It allows very rapid container and Kubernetes visibility and security onboarding.
 * [Vault](https://www.vaultproject.io/) by HashiCorp (secrets management)
+* [New Relic](https://newrelic.com/) observability platform
 
 ## Algorithms
 
