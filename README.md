@@ -2,6 +2,7 @@
 
 Brief notes and short code examples.
 
+* [Trace route on the Internet](traceroute-ng-solarwinds.md)
 * [HTML character entities](html-entitties.md)
 * [Install PrinceXML in WSL Ubuntu Linux](princexml-linux.md)
 * [Setting up a productive Python environment](python-productivity.md)
