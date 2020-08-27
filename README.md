@@ -2,6 +2,7 @@
 
 Brief notes and short code examples.
 
+* [Git unrelated histories](git-github-unrelated-histories.md)
 * [Trace route on the Internet](traceroute-ng-solarwinds.md)
 * [HTML character entities](html-entitties.md)
 * [Install PrinceXML in WSL Ubuntu Linux](princexml-linux.md)
