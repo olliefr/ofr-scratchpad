@@ -88,7 +88,7 @@ rook, locksmith, vulcand, Doorman, CoreDNS, and OpenStack.
 ## Container orchestration
 
 * [Docker Swarm](https://docs.docker.com/engine/swarm/) is a native container orchestration solution from [Docker, Inc](https://www.docker.com/).
-* [Kubernetes](https://kubernetes.io/) is an open-source system for automating deployment, scaling, and management of containerized applications.
+* [Kubernetes][] is an open-source system for automating deployment, scaling, and management of containerized applications.
 * [k3s](https://k3s.io/) is a highly available, certified Kubernetes distribution designed for production workloads in unattended, resource-constrained, remote locations or inside IoT appliances. Optimized for ARM.
 * Apache [Mesos](https://mesos.apache.org/) is a *distributed systems kernel*. It allows to program against the datacenter like it’s a single pool of resources (RAM, CPU, etc). It provides functionality that crosses between IaaS and PaaS.
     * D2iQ [MesoSphere](https://d2iq.com/solutions/mesosphere/dcos) offers a commercial solution on top of Apache Mesos.
@@ -99,7 +99,7 @@ rook, locksmith, vulcand, Doorman, CoreDNS, and OpenStack.
 
 ## Service discovery
 
-* Hashicorp [Consul](https://www.hashicorp.com/products/consul)
+* [Consul][] by [HashiCorp]
 
 ## Hosted services and solutions
 
@@ -113,7 +113,7 @@ There is a notion of a *certified* hosted Kubernetes platform.
 * [IBM Cloud Kubernetes Service](https://www.ibm.com/cloud/container-service/)
 * [NetApp Project Astra](https://cloud.netapp.com/project-astra)
 * [Oracle Container Engine for Kubernetes](https://www.oracle.com/cloud/compute/container-engine-kubernetes.html)
-* [RedHat OpenShift](https://www.openshift.com/products)
+* [OpenShift][] by [RedHat][]
 * [VMWare Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid) (TKG)
 
 ## "*Cloud Native*"
@@ -122,38 +122,38 @@ In the *Cloud Native* approach, we design a package and run applications on top 
 
 [Draft vs Gitkube vs Helm vs Ksonnet vs Metaparticle vs Skaffold](https://hasura.io/blog/draft-vs-gitkube-vs-helm-vs-ksonnet-vs-metaparticle-vs-skaffold-f5aa9561f948/)
 
-* [Helm](https://helm.sh/)
+* [Helm][]
 
-  It is a popular package manager for Kubernetes. Helm packages Kubernetes applications into Charts, with all the artifacts, objects, and dependencies an entire application needs in order to successfully be deployed in a Kubernetes cluster. Using Helm Charts, which are stored in repositories, we can share, install, upgrade, or rollback an application that was built to run on Kubernetes. Helm is a graduated project of [CNCF](https://www.cncf.io/).
+  It is a popular package manager for Kubernetes. Helm packages Kubernetes applications into Charts, with all the artifacts, objects, and dependencies an entire application needs in order to successfully be deployed in a Kubernetes cluster. Using Helm Charts, which are stored in repositories, we can share, install, upgrade, or rollback an application that was built to run on Kubernetes. Helm is a graduated project of [CNCF][].
   
-* [Draft](https://draft.sh/)
+* [Draft][]
 
   It is being promoted as a developer tool for cloud-native applications running on Kubernetes, and it allows for an application to be containerized and deployed on Kubernetes.
   
-* [Skaffold](https://skaffold.dev/)
+* [Skaffold][]
 
   It is a tool from Google that helps us build, push, and deploy code to the Kubernetes cluster. It supports Helm, and it also provides building blocks and describes customizations for a CI/CD pipeline.
   
-* [Argo](https://argoproj.github.io/)
+* [Argo][]
 
   It is a container-native workflow engine for Kubernetes. Its use cases include running Machine Learning, Data Processing, and CI/CD tasks on Kubernetes.
 
-* [Jenkins X](https://jenkins-x.io/)
+* [Jenkins X][]
 
-  Jenkins is a very popular tool for CI/CD that can be used on Kubernetes as well. But the Jenkins team built a new cloud-native CI/CD tool, Jenkins X, from the ground up. The new tool leverages Docker, Draft, and Helm to deploy a Jenkins CI/CD pipeline directly on Kubernetes, by simplifying and automating full CI/CD pipelines. In addition, Jenkins X automates the preview of pull requests for fast feedback before changes are merged, and then it automates the environment management and the promotion of new application versions between different environments. Jenkins X is a graduated project of [CD Foundation](https://cd.foundation/).
+  Jenkins is a very popular tool for CI/CD that can be used on Kubernetes as well. But the Jenkins team built a new cloud-native CI/CD tool, Jenkins X, from the ground up. The new tool leverages Docker, Draft, and Helm to deploy a Jenkins CI/CD pipeline directly on Kubernetes, by simplifying and automating full CI/CD pipelines. In addition, Jenkins X automates the preview of pull requests for fast feedback before changes are merged, and then it automates the environment management and the promotion of new application versions between different environments. Jenkins X is a graduated project of [CD Foundation][].
 
-* [Spinnaker](https://spinnaker.io/)
+* [Spinnaker][]
 
   It is an open source multi-cloud continuous delivery platform from Netflix for releasing software changes with high velocity. It supports all the major cloud providers like Amazon Web Services, Microsoft Azure, Google Cloud Platform, and OpenStack. It supports Kubernetes natively. Spinnaker is a graduated project of CD Foundation.
 
 ## REST APIs
 
-* [Swagger](https://swagger.io/) is an open-source software set of tools to design, build, document, and use RESTful web services, developed by [SmartBear Software](https://smartbear.com/). It includes automated documentation, code generation, and test-case generation. 
+* [Swagger][] is an open-source software set of tools to design, build, document, and use RESTful web services, developed by [SmartBear Software][]. It includes automated documentation, code generation, and test-case generation. 
 
 ## GitOps
 
-* [Weave Flux](https://www.weave.works/oss/flux/) enables continuous delivery of container images, using version control for each step to ensure deployment is reproducible, auditable and revertible.
-* [GitKube](https://gitkube.sh/) is tool for building and deploying docker images on Kubernetes using `git push`.
+* [Weave Flux][] enables continuous delivery of container images, using version control for each step to ensure deployment is reproducible, auditable and revertible.
+* [GitKube][] is tool for building and deploying docker images on Kubernetes using `git push`.
 
   After a simple initial setup, users can simply keep git push-ing their repos to build and deploy docker images to Kubernetes automatically. It can be configured to update any k8s deployment with a newly built image using dockerfile present in the repo.
     
@@ -161,22 +161,53 @@ In the *Cloud Native* approach, we design a package and run applications on top 
 
 These tools allow us to define the desired state of the systems in an automated way. At any point in time, we want to have a consistent and desired state of systems and software installed on them. This is also referred to as *Infrastructure as Code (IaaC)*.
 
-* [Ansible](https://www.ansible.com/)
-* [Chef](https://www.chef.io/products/automate)
-* [Puppet](https://puppet.com/)
-* [Salt](https://www.saltstack.com/)
+* [Ansible][]
+* [Chef][]
+* [Puppet][]
+* [Salt][]
+
+Automated *image builders*:
+
+* [Packer][] by [HashiCorp][]
 
 ## Monitoring and Security
 
-* [DataDog](https://www.datadoghq.com/) provides intelligent application and service monitoring, particularly suited for debugging microservices.
-* [sysdig](https://sysdig.com/) scans for vulnerabilities and provides a view inside containers to alert on anomalous behavior and application health issues. It allows very rapid container and Kubernetes visibility and security onboarding.
-* [Vault](https://www.vaultproject.io/) by HashiCorp (secrets management)
-* [New Relic](https://newrelic.com/) observability platform
+* [DataDog][] provides intelligent application and service monitoring, particularly suited for debugging microservices.
+* [sysdig][] scans for vulnerabilities and provides a view inside containers to alert on anomalous behavior and application health issues. It allows very rapid container and Kubernetes visibility and security onboarding.
+* [Vault][] by HashiCorp (secrets management)
+* [New Relic][] observability platform
 
 ## Algorithms
 
 This is not a *vendor*, but I have no better place to record this for now.
 
-* [Raft consensus algorithm](https://raft.github.io/) is used by *Docker Swarm Manager* nodes to maintain the cluster state.
+* [Raft][] *consensus algorithm* is used by *Docker Swarm Manager* nodes to maintain the cluster state.
 
-&mdash; Oliver Frolovs, 2020
+<!-- Links used in the document: alphabetically ordered, ignoring case -->
+[Ansible]: https://www.ansible.com/
+[Argo]: https://argoproj.github.io/
+[CD Foundation]: https://cd.foundation/
+[Chef]: https://www.chef.io/products/automate
+[CNCF]: https://www.cncf.io/
+[Consul]: https://www.hashicorp.com/products/consul
+[DataDog]: https://www.datadoghq.com/
+[Draft]: https://draft.sh/
+[GitKube]: https://gitkube.sh/
+[HashiCorp]: https://www.hashicorp.com/
+[Helm]: https://helm.sh/
+[Jenkins X]: https://jenkins-x.io/
+[Kubernetes]: https://kubernetes.io/
+[New Relic]: https://newrelic.com/
+[OpenShift]: https://www.openshift.com/products
+[Packer]: https://www.packer.io/
+[Puppet]: https://puppet.com/
+[Raft]: https://raft.github.io/
+[RedHat]: https://www.redhat.com/
+[Salt]: https://www.saltstack.com/
+[Skaffold]: https://skaffold.dev/
+[SmartBear Software]: https://smartbear.com/
+[Spinnaker]: https://spinnaker.io/
+[Swagger]: https://swagger.io/
+[sysdig]: https://sysdig.com/
+[Vault]: https://www.vaultproject.io/
+[Weave Flux]: https://www.weave.works/oss/flux/
