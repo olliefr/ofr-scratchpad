@@ -2,6 +2,7 @@
 
 Brief notes and short code examples.
 
+* [Don't block an open PDF file for saving and reload on save](pdf-viewer-reload.md)
 * [Windows PowerToys](windows-powertoys-fancyzones.md)
 * [Git unrelated histories](git-github-unrelated-histories.md)
 * [Trace route on the Internet](traceroute-ng-solarwinds.md)
