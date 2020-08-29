@@ -2,7 +2,11 @@
 
 This is an **incomplete** list of Cloud-related technology providers, both hardware and software. It is continuously updated as I find new vendors.
 
-* [Cloud Native Computing Foundation](https://www.cncf.io/)
+* [DC/OS][] (the Distributed Cloud Operating System) is an open-source, distributed operating system based on the Apache Mesos distributed systems kernel. DC/OS manages multiple machines in the cloud or on-premises from a single interface; deploys containers, distributed services, and legacy applications into those machines; and provides networking, service discovery and resource management to keep the services running and communicating with each other.
+
+* [Cloud Native Computing Foundation][CNCF]
+
+* [Postman][] is a collaboration platform for API development.
 
 <details>
 <summary>**TODO** change categories to labels</summary>
@@ -174,8 +178,30 @@ Automated *image builders*:
 
 * [DataDog][] provides intelligent application and service monitoring, particularly suited for debugging microservices.
 * [sysdig][] scans for vulnerabilities and provides a view inside containers to alert on anomalous behavior and application health issues. It allows very rapid container and Kubernetes visibility and security onboarding.
+* [Retrace][] by [Stackify][]
 * [Vault][] by HashiCorp (secrets management)
 * [New Relic][] observability platform
+
+## Service Mesh
+
+* [Consul][] by [HashiCorp][] is an open source project aiming to provide a secure multi-cloud service networking through automated network configuration and service discovery.
+* [Tanzu][] by [VMWare]
+
+### Data Plane
+
+* [Linkerd][] is a [CNCF][] project. It adds critical security, observability, and reliability features to your Kubernetes stack—no code change required. Zero-trust multi-cluster Kubernetes. It can be installed *per host* or *instance*, as a **replacement for the sidecar deployment**.
+* [NGINX][]
+* [HAProxy][]
+* [Envoy][], a [CNCF][] project. It can be set up as a *sidecar proxy* or as an *edge proxy*. **The most popular Serice Mesh proxy today.**
+* [Traefik][] from [Containous][] is the Cloud Native Edge Router (ingress proxy).
+* [Maesh][] from [Containous][] is a straight-forward, easy to configure, and non-invasive service mesh that allows visibility and management of the traffic flows inside any Kubernetes cluster.
+
+### Control Plane
+
+* [Istio][] to connect, secure, control, and observe services. It uses an extended version of the [Envoy][] proxy, deployed as *sidecars*.
+* [Nelson][] multi-cloud orchestrator (?)
+* [SmartStack][]
+* [Kuma][] is a [CNCF][] project and is based on [Envoy][]. It was originally created by [Kong][]. Can be installed in a *universal* mode, or in a *Kubernetes* mode which injects a *proxy sidecar* into desired *Kubernetes Pods*.
 
 ## Algorithms
 
@@ -190,24 +216,42 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Chef]: https://www.chef.io/products/automate
 [CNCF]: https://www.cncf.io/
 [Consul]: https://www.hashicorp.com/products/consul
+[Containous]: https://containo.us/
 [DataDog]: https://www.datadoghq.com/
+[DC/OS]: https://dcos.io/
 [Draft]: https://draft.sh/
+[Envoy]: https://www.envoyproxy.io/
 [GitKube]: https://gitkube.sh/
+[HAProxy]: http://www.haproxy.org/
 [HashiCorp]: https://www.hashicorp.com/
 [Helm]: https://helm.sh/
+[Istio]: https://istio.io/
 [Jenkins X]: https://jenkins-x.io/
+[Kong]: https://konghq.com/
 [Kubernetes]: https://kubernetes.io/
+[Kuma]: https://kuma.io/
+[Linkerd]: https://linkerd.io/
+[Maesh]: https://containo.us/maesh/
+[Nelson]: https://getnelson.io/
 [New Relic]: https://newrelic.com/
+[NGINX]: https://www.nginx.com/
 [OpenShift]: https://www.openshift.com/products
 [Packer]: https://www.packer.io/
+[Postman]: https://www.postman.com/
 [Puppet]: https://puppet.com/
 [Raft]: https://raft.github.io/
 [RedHat]: https://www.redhat.com/
+[Retrace]: https://stackify.com/retrace/
 [Salt]: https://www.saltstack.com/
 [Skaffold]: https://skaffold.dev/
 [SmartBear Software]: https://smartbear.com/
+[SmartStack]: https://www.smartstack.co.uk/
 [Spinnaker]: https://spinnaker.io/
+[Stackify]: https://stackify.com/
 [Swagger]: https://swagger.io/
 [sysdig]: https://sysdig.com/
+[Tanzu]: https://tanzu.vmware.com/service-mesh
+[Traefik]: https://containo.us/traefik/
 [Vault]: https://www.vaultproject.io/
+[VMWare]: https://www.vmware.com/
 [Weave Flux]: https://www.weave.works/oss/flux/
