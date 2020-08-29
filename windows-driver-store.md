@@ -1,4 +1,4 @@
-# Windows Drivers
+# Windows Driver Store
 
 Windows 10 has a concept of the **Driver Store**. It is a write-protected directory where Windows keeps many drivers it has sourced from&hellip; *wherever*, because&hellip; *reasons*.
 
