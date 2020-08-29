@@ -10,6 +10,7 @@ The [Unicode Character Table](https://unicode-table.com/en/) has HTML codes for 
 
 ## Characters
 
+* `&hellip;` is an _ellipsis_ &hellip;
 * `&ndash;` and `&mdash;` are _en-dash_ &ndash; and _em-dash_ &mdash;
 * `&reg;` is _registered trademark sign_ &reg;
 * `&copy;` is _copyright sign_ &copy;
