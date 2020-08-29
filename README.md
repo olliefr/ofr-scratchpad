@@ -2,6 +2,7 @@
 
 Brief notes and short code examples.
 
+* [Windows 10 Driver Store and Core Isolation](windows-drivers.md)
 * [Don't block an open PDF file for saving and reload on save](pdf-viewer-reload.md)
 * [Windows PowerToys](windows-powertoys-fancyzones.md)
 * [Git unrelated histories](git-github-unrelated-histories.md)
