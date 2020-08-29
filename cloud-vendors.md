@@ -1,6 +1,17 @@
-# Cloud technology vendors
+# Cloud Technology
 
-This is an **incomplete** list of Cloud-related technology providers, both hardware and software. It is continuously updated as I find new vendors.
+_Unsystematic_ and _incomplete_ lists of **brands** in some ways related to the Cloud.
+
+## A whimsical list of pivotal points
+
+* 2014 [Kubernetes][]
+* 2013 [Docker][]
+* 2010 Python [Flask][]
+* 2007 [Heroku][]
+* 2005 Python [Django][]
+* 1990 [Python][]
+
+---
 
 * [DC/OS][] (the Distributed Cloud Operating System) is an open-source, distributed operating system based on the Apache Mesos distributed systems kernel. DC/OS manages multiple machines in the cloud or on-premises from a single interface; deploys containers, distributed services, and legacy applications into those machines; and provides networking, service discovery and resource management to keep the services running and communicating with each other.
 
@@ -219,12 +230,16 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Containous]: https://containo.us/
 [DataDog]: https://www.datadoghq.com/
 [DC/OS]: https://dcos.io/
+[Django]: https://www.djangoproject.com/
+[Docker]: https://www.docker.com/
 [Draft]: https://draft.sh/
 [Envoy]: https://www.envoyproxy.io/
+[Flask]: https://palletsprojects.com/p/flask/
 [GitKube]: https://gitkube.sh/
 [HAProxy]: http://www.haproxy.org/
 [HashiCorp]: https://www.hashicorp.com/
 [Helm]: https://helm.sh/
+[Heroku]: https://www.heroku.com/
 [Istio]: https://istio.io/
 [Jenkins X]: https://jenkins-x.io/
 [Kong]: https://konghq.com/
@@ -239,6 +254,7 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Packer]: https://www.packer.io/
 [Postman]: https://www.postman.com/
 [Puppet]: https://puppet.com/
+[Python]: https://www.python.org/
 [Raft]: https://raft.github.io/
 [RedHat]: https://www.redhat.com/
 [Retrace]: https://stackify.com/retrace/
