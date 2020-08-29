@@ -19,7 +19,7 @@ Brief notes and short code examples.
 * [How to profile memory usage in Python](python-profile-memory-usage.md)
 * [Change file name encoding using Python](python-recode-filenames.md)
 * [Profiling Python scripts](python-profilers.md)
-* [Cloud technology vendors](cloud-vendors.md)
+* [The main brands in Cloud technology](cloud-brands.md)
 * [Output to `stderr` in Python](python-output-stderr.md)
 * [Where's `main()` function in a Python script?](python-main.md)
 * [Stop using SSL](ssl-tls.md)
