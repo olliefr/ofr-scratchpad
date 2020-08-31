@@ -2,6 +2,11 @@
 
 _Unsystematic_ and _incomplete_ lists of **brands** in some ways related to the Cloud.
 
+---
+* **TODO** replace *headings* with *tags*, because an item often belongs to multiple categories
+* **TODO** research and document: `rook`, `locksmith`, `vulcand`, `Doorman`, `CoreDNS`, and `OpenStack`. 
+---
+
 ## A whimsical list of pivotal points
 
 * 2014 [Kubernetes]
@@ -10,31 +15,11 @@ _Unsystematic_ and _incomplete_ lists of **brands** in some ways related to the 
 * 2007 [Heroku]
 * 2005 Python [Django]
 * 1990 [Python]
-
 ---
 
-* [DC/OS] (the Distributed Cloud Operating System) is an open-source, distributed operating system based on the Apache Mesos distributed systems kernel. DC/OS manages multiple machines in the cloud or on-premises from a single interface; deploys containers, distributed services, and legacy applications into those machines; and provides networking, service discovery and resource management to keep the services running and communicating with each other.
-
 * [Cloud Native Computing Foundation][CNCF]
-
 * [Postman] is a collaboration platform for API development.
-
-<details>
-<summary>**TODO** change categories to labels</summary>
-
-Because a tree is not a good representation for a complex landscape of technology vendors.
-</details>
-
-<details>
-<summary>**TODO** document these terms (details)</summary>
-rook, locksmith, vulcand, Doorman, CoreDNS, and OpenStack. 
-</details>
-
-<details>
-    <summary>[Serf] by [HashiCorp]</summary>
-    
-    Decentralized Cluster Membership, Failure Detection, and Orchestration.
-</details>
+* [Serf] by [HashiCorp]&emsp;Decentralized Cluster Membership, Failure Detection, and Orchestration.
 
 ## Infrastructure
 
@@ -48,19 +33,15 @@ rook, locksmith, vulcand, Doorman, CoreDNS, and OpenStack.
 
 ## Infrastructure as Code (IaC)
 
-<details>
-    <summary>[Terraform] by [HashiCorp]</summary>
-    Terraform allows infrastructure to be expressed as code in a simple, human readable language called HCL (HashiCorp Configuration Language). Terraform CLI reads configuration files and provides an execution plan of changes, which can be reviewed for safety and then applied and provisioned. Extensible providers allow Terraform to manage a broad range of resources, including hardware, IaaS, PaaS, and SaaS services.
-</details>
+* [Terraform] by [HashiCorp]
+  Terraform allows infrastructure to be expressed as code in a simple, human readable language called HCL (HashiCorp Configuration Language). Terraform CLI reads configuration files and provides an execution plan of changes, which can be reviewed for safety and then applied and provisioned. Extensible providers allow Terraform to manage a broad range of resources, including hardware, IaaS, PaaS, and SaaS services.
 
 * [Atlantis]. Pull request automation for [Terraform]
 
-<details>
-    <summary>[BOSH](https://bosh.io/) by Cloud Foundry</summary>
-    BOSH is a project that unifies release engineering, deployment, and lifecycle management of small and large-scale cloud software. BOSH can provision and deploy software over hundreds of VMs. It also performs monitoring, failure recovery, and software updates with zero-to-minimal downtime.
+* [BOSH] by [Cloud Foundry]
+  BOSH is a project that unifies release engineering, deployment, and lifecycle management of small and large-scale cloud software. BOSH can provision and deploy software over hundreds of VMs. It also performs monitoring, failure recovery, and software updates with zero-to-minimal downtime.
 
-    While BOSH was developed to deploy Cloud Foundry PaaS, it can also be used to deploy almost any other software (Hadoop, for instance). BOSH is particularly well-suited for large distributed systems. In addition, BOSH supports multiple Infrastructure as a Service (IaaS) providers like VMware vSphere, Google Cloud Platform, Amazon Web Services EC2, Microsoft Azure, OpenStack, and Alibaba Cloud. There is a Cloud Provider Interface (CPI) that enables users to extend BOSH to support additional IaaS providers such as Apache CloudStack and VirtualBox.
-</details>
+  While BOSH was developed to deploy Cloud Foundry PaaS, it can also be used to deploy almost any other software (Hadoop, for instance). BOSH is particularly well-suited for large distributed systems. In addition, BOSH supports multiple Infrastructure as a Service (IaaS) providers like VMware vSphere, Google Cloud Platform, Amazon Web Services EC2, Microsoft Azure, OpenStack, and Alibaba Cloud. There is a Cloud Provider Interface (CPI) that enables users to extend BOSH to support additional IaaS providers such as Apache CloudStack and VirtualBox.
 
 <details>
     <summary>[CloudFormation](https://aws.amazon.com/cloudformation/) by Amazon AWS</summary>
@@ -107,11 +88,13 @@ rook, locksmith, vulcand, Doorman, CoreDNS, and OpenStack.
 * [Docker Swarm](https://docs.docker.com/engine/swarm/) is a native container orchestration solution from [Docker, Inc](https://www.docker.com/).
 * [Kubernetes] is an open-source system for automating deployment, scaling, and management of containerized applications.
 * [k3s](https://k3s.io/) is a highly available, certified Kubernetes distribution designed for production workloads in unattended, resource-constrained, remote locations or inside IoT appliances. Optimized for ARM.
-* Apache [Mesos](https://mesos.apache.org/) is a *distributed systems kernel*. It allows to program against the datacenter like it’s a single pool of resources (RAM, CPU, etc). It provides functionality that crosses between IaaS and PaaS.
+* Apache [Mesos] is a *distributed systems kernel*. It allows to program against the datacenter like it’s a single pool of resources (RAM, CPU, etc). It provides functionality that crosses between IaaS and PaaS.
     * D2iQ [MesoSphere](https://d2iq.com/solutions/mesosphere/dcos) offers a commercial solution on top of Apache Mesos.
-    * [DC/OS](https://dcos.io/) has been open-sourced by D2iQ. They also provide a commercial version of it.
-    * [Marathon](https://mesosphere.github.io/marathon/) is a production-grade container orchestration platform for DC/OS and Apache Mesos.
-* Hashicorp [Nomad] is a cluster manager and resource scheduler. Containers, VMs, individual applications, etc...
+    * [DC/OS] (the Distributed Cloud Operating System) by D2iQ. They also provide a commercial version of it.
+      is an open-source, distributed operating system based on the Apache [Mesos] distributed systems kernel. DC/OS manages multiple machines in the cloud or on-premises from a single interface; deploys containers, distributed services, and legacy applications into those machines; and provides networking, service discovery and resource management to keep the services running and communicating with each other.
+
+    * [Marathon] is a production-grade container orchestration platform for DC/OS and Apache Mesos.
+* [HashiCorp] [Nomad] is a cluster manager and resource scheduler. Containers, VMs, individual applications, etc...
 * Amazon [ECS] elastic cloud service (not Kubernetes). Offers Fargate service which figures out the provisioning automatically, only container images have to be provided by the customer.
 
 ## Service discovery
@@ -227,7 +210,9 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Ansible]: https://www.ansible.com/
 [Argo]: https://argoproj.github.io/
 [Atlantis]: https://www.runatlantis.io/
+[Bosh]: https://bosh.io/
 [CD Foundation]: https://cd.foundation/
+[Cloud Foundry]: https://www.cloudfoundry.org/
 [Chef]: https://www.chef.io/products/automate
 [CNCF]: https://www.cncf.io/
 [Consul]: https://www.hashicorp.com/products/consul
@@ -251,6 +236,8 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Kuma]: https://kuma.io/
 [Linkerd]: https://linkerd.io/
 [Maesh]: https://containo.us/maesh/
+[Marathon]: https://mesosphere.github.io/marathon/
+[Mesos]: https://mesos.apache.org/
 [Nelson]: https://getnelson.io/
 [New Relic]: https://newrelic.com/
 [NGINX]: https://www.nginx.com/
