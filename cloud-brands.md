@@ -31,7 +31,7 @@ rook, locksmith, vulcand, Doorman, CoreDNS, and OpenStack.
 </details>
 
 <details>
-    <summary>[Serf](https://www.serf.io/) by HashiCorp</summary>
+    <summary>[Serf] by [HashiCorp]</summary>
     
     Decentralized Cluster Membership, Failure Detection, and Orchestration.
 </details>
@@ -43,7 +43,7 @@ rook, locksmith, vulcand, Doorman, CoreDNS, and OpenStack.
 * [Microsoft Azure](https://azure.microsoft.com/en-gb/)
 * [Joyent](https://www.joyent.com/) provides managed private clouds, hosted or on-premise.
 * [Alibaba Cloud](https://www.alibabacloud.com/)
-* IBM Clooud
+* IBM Cloud
 * Oracle Cloud
 
 ## Infrastructure as Code (IaC)
@@ -264,6 +264,7 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Retrace]: https://stackify.com/retrace/
 [Salt]: https://www.saltstack.com/
 [Sentinel]: https://www.hashicorp.com/sentinel
+[Serf]: https://www.serf.io/
 [Skaffold]: https://skaffold.dev/
 [SmartBear Software]: https://smartbear.com/
 [SmartStack]: https://www.smartstack.co.uk/
