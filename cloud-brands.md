@@ -23,13 +23,13 @@ _Unsystematic_ and _incomplete_ lists of **brands** in some ways related to the 
 
 ## Infrastructure
 
-* [Amazon Web Services (AWS)](https://aws.amazon.com/) has *Amazon EC2: Elastic Compute Cloud*
-* [Google Cloud](https://cloud.google.com/)
-* [Microsoft Azure](https://azure.microsoft.com/en-gb/)
-* [Joyent](https://www.joyent.com/) provides managed private clouds, hosted or on-premise.
-* [Alibaba Cloud](https://www.alibabacloud.com/)
-* IBM Cloud
-* Oracle Cloud
+* [Amazon Web Services][AWS] (or [AWS]) provides computing instances and networking insfrastructure.
+* [Google Cloud] is a direct competitor for [AWS].
+* [Microsoft Azure][Azure] is also a competitor for [AWS] and [Google Cloud]
+* [Joyent] provides managed private clouds, hosted or on-premise.
+* [Alibaba Cloud] claims to have more users in Asia Pacific than any other Cloud platform
+* [IBM Cloud] has _DB2_ databases and _Watson_ AI facilities easily accessible.
+* [Oracle Cloud] presumably is good for ~~getting sued~~ Oracle database? They claim it's much less expensive than [AWS].
 
 ## Infrastructure as Code (IaC)
 
@@ -43,41 +43,37 @@ _Unsystematic_ and _incomplete_ lists of **brands** in some ways related to the 
 
   While BOSH was developed to deploy Cloud Foundry PaaS, it can also be used to deploy almost any other software (Hadoop, for instance). BOSH is particularly well-suited for large distributed systems. In addition, BOSH supports multiple Infrastructure as a Service (IaaS) providers like VMware vSphere, Google Cloud Platform, Amazon Web Services EC2, Microsoft Azure, OpenStack, and Alibaba Cloud. There is a Cloud Provider Interface (CPI) that enables users to extend BOSH to support additional IaaS providers such as Apache CloudStack and VirtualBox.
 
-<details>
-    <summary>[CloudFormation](https://aws.amazon.com/cloudformation/) by Amazon AWS</summary>
-    AWS CloudFormation provides a common language for you to model and provision AWS and third party application resources in your cloud environment. AWS CloudFormation allows you to use programming languages or a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all regions and accounts. This gives you a single source of truth for your AWS and third party resources. 
-</details>
+* [CloudFormation] Amazon [AWS]
+  
+  AWS CloudFormation provides a common language for you to model and provision AWS and third party application resources in your cloud environment. AWS CloudFormation allows you to use programming languages or a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all regions and accounts. This gives you a single source of truth for your AWS and third party resources.
+
+  In other words, it's *closed-source*, *vendor-specific* attempt at [Terraform].
+
 
 ## Key-value pair store
 
 **!!!** Note how much of very advanced functionality is enabled by the *KV pair stores*
 
-<details>
-    <summary>[etcd](https://etcd.io/)</summary>
+* [etcd]
     
-    A distributed, reliable key-value store for the most critical data of a distributed system
-</details>
+  A distributed, reliable key-value store for the most critical data of a distributed system
 
-<details>
-    <summary>[Consul](https://www.consul.io/) by HashiCorp</summary>
-    Consul is a service mesh solution providing a full featured control plane with service discovery, configuration, and segmentation functionality. Each of these features can be used individually as needed, or they can be used together to build a full service mesh. Consul requires a data plane and supports both a proxy and native integration model. Consul ships with a simple built-in proxy so that everything works out of the box, but also supports 3rd party proxy integrations such as Envoy.
+* [Consul] by [HashiCorp]
+
+  Consul is a service mesh solution providing a full featured control plane with service discovery, configuration, and segmentation functionality. Each of these features can be used individually as needed, or they can be used together to build a full service mesh. Consul requires a data plane and supports both a proxy and native integration model. Consul ships with a simple built-in proxy so that everything works out of the box, but also supports 3rd party proxy integrations such as Envoy.
     
-    Other than providing a distributed key-value store, it also provides features like:
+  Other than providing a distributed key-value store, it also provides features like:
     
-    * Service discovery (with DNS or HTTP) 
-    * Health checks for services and nodes
-    * Network infrastructure automation
-    * Multi-platform service mesh
+  * Service discovery (with DNS or HTTP) 
+  * Health checks for services and nodes
+  * Network infrastructure automation
+  * Multi-platform service mesh
 
-    Consul is built on top of [Serf](https://www.serf.io/)
-</details>
+  [Consul] is built on top of [Serf]
 
-<details>
-    <summary>[ZooKeeper](https://zookeeper.apache.org/) by Apache</summary>
+ * [ZooKeeper] by Apache
     
-    ZooKeeper is a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services. All of these kinds of services are used in some form or another by distributed applications. Each time they are implemented there is a lot of work that goes into fixing the bugs and race conditions that are inevitable. Because of the difficulty of implementing these kinds of services, applications initially usually skimp on them, which make them brittle in the presence of change and difficult to manage. Even when done correctly, different implementations of these services lead to management complexity when the applications are deployed.
-</details>
-
+   ZooKeeper is a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services. All of these kinds of services are used in some form or another by distributed applications. Each time they are implemented there is a lot of work that goes into fixing the bugs and race conditions that are inevitable. Because of the difficulty of implementing these kinds of services, applications initially usually skimp on them, which make them brittle in the presence of change and difficult to manage. Even when done correctly, different implementations of these services lead to management complexity when the applications are deployed.
 
 ## Network
 
@@ -85,16 +81,16 @@ _Unsystematic_ and _incomplete_ lists of **brands** in some ways related to the 
 
 ## Container orchestration
 
-* [Docker Swarm](https://docs.docker.com/engine/swarm/) is a native container orchestration solution from [Docker, Inc](https://www.docker.com/).
+* [Docker Swarm] is a native container orchestration solution from [Docker, Inc][Docker].
 * [Kubernetes] is an open-source system for automating deployment, scaling, and management of containerized applications.
-* [k3s](https://k3s.io/) is a highly available, certified Kubernetes distribution designed for production workloads in unattended, resource-constrained, remote locations or inside IoT appliances. Optimized for ARM.
+* [k3s] is a highly available, certified Kubernetes distribution designed for production workloads in unattended, resource-constrained, remote locations or inside IoT appliances. Optimized for ARM.
 * Apache [Mesos] is a *distributed systems kernel*. It allows to program against the datacenter like it’s a single pool of resources (RAM, CPU, etc). It provides functionality that crosses between IaaS and PaaS.
-    * D2iQ [MesoSphere](https://d2iq.com/solutions/mesosphere/dcos) offers a commercial solution on top of Apache Mesos.
+    * D2iQ [MesoSphere] offers a commercial solution on top of Apache Mesos.
     * [DC/OS] (the Distributed Cloud Operating System) by D2iQ. They also provide a commercial version of it.
       is an open-source, distributed operating system based on the Apache [Mesos] distributed systems kernel. DC/OS manages multiple machines in the cloud or on-premises from a single interface; deploys containers, distributed services, and legacy applications into those machines; and provides networking, service discovery and resource management to keep the services running and communicating with each other.
 
     * [Marathon] is a production-grade container orchestration platform for DC/OS and Apache Mesos.
-* [HashiCorp] [Nomad] is a cluster manager and resource scheduler. Containers, VMs, individual applications, etc...
+* [Nomad] by [HashiCorp] is a cluster manager and resource scheduler. It can manage containers, VMs, individual applications, etc...
 * Amazon [ECS] elastic cloud service (not Kubernetes). Offers Fargate service which figures out the provisioning automatically, only container images have to be provided by the customer.
 
 ## Service discovery
@@ -207,30 +203,40 @@ This is not a *vendor*, but I have no better place to record this for now.
 * [Raft] *consensus algorithm* is used by *Docker Swarm Manager* nodes to maintain the cluster state.
 
 <!-- Links used in the document: alphabetically ordered, ignoring case -->
+[Alibaba Cloud]: https://www.alibabacloud.com/
 [Ansible]: https://www.ansible.com/
 [Argo]: https://argoproj.github.io/
 [Atlantis]: https://www.runatlantis.io/
+[AWS]: https://aws.amazon.com/
+[Azure]: https://azure.microsoft.com/en-gb/
 [Bosh]: https://bosh.io/
 [CD Foundation]: https://cd.foundation/
 [Cloud Foundry]: https://www.cloudfoundry.org/
 [Chef]: https://www.chef.io/products/automate
+[CloudFormation]: https://aws.amazon.com/cloudformation/
 [CNCF]: https://www.cncf.io/
-[Consul]: https://www.hashicorp.com/products/consul
+[Consul]: https://www.consul.io/
 [Containous]: https://containo.us/
 [DataDog]: https://www.datadoghq.com/
 [DC/OS]: https://dcos.io/
 [Django]: https://www.djangoproject.com/
 [Docker]: https://www.docker.com/
+[Docker Swarm]: https://docs.docker.com/engine/swarm/
 [Draft]: https://draft.sh/
 [Envoy]: https://www.envoyproxy.io/
+[etcd]: https://etcd.io/
 [Flask]: https://palletsprojects.com/p/flask/
 [GitKube]: https://gitkube.sh/
+[Google Cloud]: https://cloud.google.com/
 [HAProxy]: http://www.haproxy.org/
 [HashiCorp]: https://www.hashicorp.com/
 [Helm]: https://helm.sh/
 [Heroku]: https://www.heroku.com/
+[IBM Cloud]: https://www.ibm.com/cloud
 [Istio]: https://istio.io/
 [Jenkins X]: https://jenkins-x.io/
+[Joyent]: https://www.joyent.com/
+[k3s]: https://k3s.io/
 [Kong]: https://konghq.com/
 [Kubernetes]: https://kubernetes.io/
 [Kuma]: https://kuma.io/
@@ -238,10 +244,12 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Maesh]: https://containo.us/maesh/
 [Marathon]: https://mesosphere.github.io/marathon/
 [Mesos]: https://mesos.apache.org/
+[Mesosphere]: https://d2iq.com/solutions/mesosphere/dcos
 [Nelson]: https://getnelson.io/
 [New Relic]: https://newrelic.com/
 [NGINX]: https://www.nginx.com/
 [OpenShift]: https://www.openshift.com/products
+[Oracle Cloud]: https://www.oracle.com/uk/cloud/
 [Packer]: https://www.packer.io/
 [Postman]: https://www.postman.com/
 [Puppet]: https://puppet.com/
@@ -265,3 +273,4 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Vault]: https://www.vaultproject.io/
 [VMWare]: https://www.vmware.com/
 [Weave Flux]: https://www.weave.works/oss/flux/
+[ZooKeeper]: https://zookeeper.apache.org/
