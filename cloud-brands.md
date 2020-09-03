@@ -153,6 +153,8 @@ In the *Cloud Native* approach, we design a package and run applications on top 
 
 ## GitOps
 
+* [GitLab]
+
 * [Weave Flux] enables continuous delivery of container images, using version control for each step to ensure deployment is reproducible, auditable and revertible.
 * [GitKube] is tool for building and deploying docker images on Kubernetes using `git push`.
 
@@ -236,6 +238,7 @@ This is not a *vendor*, but I have no better place to record this for now.
 [etcd]: https://etcd.io/
 [Flask]: https://palletsprojects.com/p/flask/
 [GitKube]: https://gitkube.sh/
+[GitLab]: https://about.gitlab.com/
 [Google Cloud]: https://cloud.google.com/
 [HAProxy]: http://www.haproxy.org/
 [HashiCorp]: https://www.hashicorp.com/
