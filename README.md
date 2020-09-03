@@ -2,7 +2,7 @@
 
 A personal collection of small, unrelated notes and code examples.
 
-&mdash;&hairsp;Oliver Frolovs
+&mdash; Oliver Frolovs
 
 ---
 
