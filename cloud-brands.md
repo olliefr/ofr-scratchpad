@@ -49,7 +49,6 @@ _Unsystematic_ and _incomplete_ lists of **brands** in some ways related to the 
 
   In other words, it's *closed-source*, *vendor-specific* attempt at [Terraform].
 
-
 ## Key-value pair store
 
 **!!!** Note how much of very advanced functionality is enabled by the *KV pair stores*
@@ -149,7 +148,8 @@ In the *Cloud Native* approach, we design a package and run applications on top 
 
 ## REST APIs
 
-* [Swagger] is an open-source software set of tools to design, build, document, and use RESTful web services, developed by [SmartBear Software]. It includes automated documentation, code generation, and test-case generation. 
+* [Swagger] is an open-source software set of tools to design, build, document, and use RESTful web services, developed by [SmartBear Software]. It includes automated documentation, code generation, and test-case generation.
+* [Postman]
 
 ## GitOps
 
@@ -157,6 +157,8 @@ In the *Cloud Native* approach, we design a package and run applications on top 
 * [GitKube] is tool for building and deploying docker images on Kubernetes using `git push`.
 
   After a simple initial setup, users can simply keep git push-ing their repos to build and deploy docker images to Kubernetes automatically. It can be configured to update any k8s deployment with a newly built image using dockerfile present in the repo.
+  
+* [Tidelift] provides curated catalogs of known-good open source components and the capacity to create private catalogs for the enterprise.
     
 # Configuration Management
 
@@ -179,6 +181,7 @@ Automated *image builders*:
 * [Vault] by HashiCorp (secrets management)
 * [New Relic] observability platform
 * [Sentinel]&emsp;_policy as code_ framework for [HashiCorp] Enterprise Products.
+* [PagerDuty] is a SaaS *incident response platform* for IT departments.
 
 ## Service Mesh
 
@@ -257,6 +260,7 @@ This is not a *vendor*, but I have no better place to record this for now.
 [OpenShift]: https://www.openshift.com/products
 [Oracle Cloud]: https://www.oracle.com/uk/cloud/
 [Packer]: https://www.packer.io/
+[PagerDuty]: https://www.pagerduty.com/
 [Postman]: https://www.postman.com/
 [Puppet]: https://puppet.com/
 [Python]: https://www.python.org/
@@ -275,6 +279,7 @@ This is not a *vendor*, but I have no better place to record this for now.
 [sysdig]: https://sysdig.com/
 [Tanzu]: https://tanzu.vmware.com/service-mesh
 [Terraform]: https://www.terraform.io/
+[Tidelift]: https://tidelift.com/
 [Traefik]: https://containo.us/traefik/
 [Vault]: https://www.vaultproject.io/
 [VMWare]: https://www.vmware.com/
