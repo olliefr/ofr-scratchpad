@@ -93,6 +93,11 @@ _Unsystematic_ and _incomplete_ lists of **brands** in some ways related to the 
 * [Nomad] by [HashiCorp] is a cluster manager and resource scheduler. It can manage containers, VMs, individual applications, etc...
 * Amazon [ECS] elastic cloud service (not Kubernetes). Offers Fargate service which figures out the provisioning automatically, only container images have to be provided by the customer.
 
+## Operating systems
+
+* [DC/OS]
+* [Bottlerocket] open-source OS, started by Amazon. It is purpose-built to run containers. The updates to [Bottlerocket] can be applied and rolled back in an atomic manner, which makes them easy to automate, reducing management overhead and reducing operational costs. [Bottlerocket] integrates with container orchestrators to enable the automated patching of hosts to improve operational costs, manageability, and uptime.
+
 ## Service discovery
 
 * [Consul] by [HashiCorp]
@@ -210,6 +215,7 @@ This is not a *vendor*, but I have no better place to record this for now.
 [AWS]: https://aws.amazon.com/
 [Azure]: https://azure.microsoft.com/en-gb/
 [Bosh]: https://bosh.io/
+[Bottlerocket]: https://github.com/bottlerocket-os/bottlerocket
 [CD Foundation]: https://cd.foundation/
 [Cloud Foundry]: https://www.cloudfoundry.org/
 [Chef]: https://www.chef.io/products/automate
