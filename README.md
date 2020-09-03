@@ -1,6 +1,17 @@
 # ofr-scratchpad
 
-Brief notes and short code examples.
+A personal collection of small, unrelated notes and code examples.
+
+&mdash;&hairsp;Oliver Frolovs
+
+---
+
+## Pinned
+
+* [Python app templates](python-application-structure.md)
+
+---
+
 
 * [Windows 10 Driver Store and Core Isolation](windows-driver-store.md)
 * [Don't block an open PDF file for saving and reload on save](pdf-viewer-reload.md)
