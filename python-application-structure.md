@@ -1,6 +1,6 @@
 # Structuring a Python application
 
-This is also passionately known as the _boilerplate code_. This note was inspired by a [_Real Python_ tutorial](https://realpython.com/python-application-layouts/).
+_Starter_, _scaffold_, or _boilerplate_ code for projects developed mainly in Python. The note was inspired by a [_Real Python_ tutorial](https://realpython.com/python-application-layouts/).
 
 Common task&hairsp;&mdash;&hairsp;capture dependencies for both tests and code:
 
@@ -12,11 +12,12 @@ $ pip install -r requirements.txt
 
 ## One-off script
 
-This template is for a _single-file_ Python program, often called a _script_.
-
-It works both for code with or without dependencies. To manage dependencies, create a [virtual environment].
+This template is for a _single-file_ Python program, often called a _script_. It works both for code with or without dependencies. 
 
 To begin, _fork_ [python-template-oneoff] repo.
+
+To manage dependencies, create a [virtual environment].
+
 
 To **run the unit test suite** for the script:
 
