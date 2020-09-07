@@ -16,7 +16,7 @@ This template is for a _single-file_ Python program, often called a _script_.
 
 It works both for code with or without dependencies. To manage dependencies, create a [virtual environment].
 
-To begin, _fork_ [python-template-oneoff] repo.
+To begin, _generate_ a new repository using [python-template-oneoff] _template repository_.
 
 To **run the unit test suite** for the script:
 
@@ -35,7 +35,7 @@ This template steps up in complexity. It is a _multi-file_ Python _module_.
 * Now there are _multiple_ test files. The _test coverage_ is checked as well.
 * Another tool useful for larger programs is a _linter_ (`pyflake`, `pep8`).
 
-To begin, _fork_ [python-template-single-package] repo.
+To begin, _generate_ a new repository using [python-template-single-package] _template repository_.
 
 To **run the tests**, there is a `runtests.sh` bash script:
 
