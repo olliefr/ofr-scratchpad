@@ -49,6 +49,10 @@ _Unsystematic_ and _incomplete_ lists of **brands** in some ways related to the 
 
   In other words, it's *closed-source*, *vendor-specific* attempt at [Terraform].
 
+## Storage and backup
+
+* [Veeam] modern data protection for modern challenges
+
 ## Key-value pair store
 
 **!!!** Note how much of very advanced functionality is enabled by the *KV pair stores*
@@ -161,8 +165,12 @@ In the *Cloud Native* approach, we design a package and run applications on top 
   After a simple initial setup, users can simply keep git push-ing their repos to build and deploy docker images to Kubernetes automatically. It can be configured to update any k8s deployment with a newly built image using dockerfile present in the repo.
   
 * [Tidelift] provides curated catalogs of known-good open source components and the capacity to create private catalogs for the enterprise.
-    
-# Configuration Management
+
+## Communication
+
+* [Twilio] global SIM for Iot. Phone numbers. SMS. APIs. Contact Centre platform. And more.
+
+## Configuration Management
 
 These tools allow us to define the desired state of the systems in an automated way. At any point in time, we want to have a consistent and desired state of systems and software installed on them. This is also referred to as *Infrastructure as Code (IaC)*.
 
@@ -177,6 +185,7 @@ Automated *image builders*:
 
 ## Monitoring and Security
 
+* [Codacy] automatically identify issues through static code review analysis. Get notified on security issues, code coverage, code duplication, and code complexity in every commit and pull request, directly from your current workflow.
 * [DataDog] provides intelligent application and service monitoring, particularly suited for debugging microservices.
 * [sysdig] scans for vulnerabilities and provides a view inside containers to alert on anomalous behavior and application health issues. It allows very rapid container and Kubernetes visibility and security onboarding.
 * [Retrace] by [Stackify]
@@ -226,6 +235,7 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Chef]: https://www.chef.io/products/automate
 [CloudFormation]: https://aws.amazon.com/cloudformation/
 [CNCF]: https://www.cncf.io/
+[Codacy]: https://www.codacy.com/
 [Consul]: https://www.consul.io/
 [Containous]: https://containo.us/
 [DataDog]: https://www.datadoghq.com/
@@ -284,7 +294,9 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Terraform]: https://www.terraform.io/
 [Tidelift]: https://tidelift.com/
 [Traefik]: https://containo.us/traefik/
+[Twilio]: https://www.twilio.com/
 [Vault]: https://www.vaultproject.io/
+[Veeam]: https://www.veeam.com/
 [VMWare]: https://www.vmware.com/
 [Weave Flux]: https://www.weave.works/oss/flux/
 [ZooKeeper]: https://zookeeper.apache.org/
