@@ -17,8 +17,8 @@ _Unsystematic_ and _incomplete_ lists of **brands** in some ways related to the 
 * 1990 [Python]
 ---
 
-* [Cloud Native Computing Foundation][CNCF]
-* [Postman] is a collaboration platform for API development.
+* [Cloud Native Computing Foundation (CNCF)][CNCF]
+* [Cloud Security Alliance (CSA)][CSA]
 * [Serf] by [HashiCorp]&emsp;Decentralized Cluster Membership, Failure Detection, and Orchestration.
 
 ## Infrastructure
@@ -52,6 +52,8 @@ _Unsystematic_ and _incomplete_ lists of **brands** in some ways related to the 
 ## Storage and backup
 
 * [Veeam] modern data protection for modern challenges
+* [Ceph] provides CephFS &mdash; POSIX-compliant network file system. Provides *Block*, *File*, and *Object*.
+* [Gluster] is a free and open source software scalable network file system. POSIX-compliant. Provides *Block*, *File*, and *Object*.
 
 ## Key-value pair store
 
@@ -81,6 +83,10 @@ _Unsystematic_ and _incomplete_ lists of **brands** in some ways related to the 
 ## Network
 
 * [OpenFlow](https://en.wikipedia.org/wiki/OpenFlow) is a communications protocol that gives access to the forwarding plane of a network switch or router over the network. It is crucial to the whole *Software-Defined Networking* enterprise.
+* [Infoblox] core network services for the multi-cloud organisation.
+* [Project Calico] by Tigera is an open source networking and network security solution for containers, VMs, and native host-based workloads.
+
+**DDI** is DNS, DHCP, and IP address management.
 
 ## Container orchestration
 
@@ -150,10 +156,16 @@ In the *Cloud Native* approach, we design a package and run applications on top 
 
   It is an open source multi-cloud continuous delivery platform from Netflix for releasing software changes with high velocity. It supports all the major cloud providers like Amazon Web Services, Microsoft Azure, Google Cloud Platform, and OpenStack. It supports Kubernetes natively. Spinnaker is a graduated project of CD Foundation.
 
+## Serverless (FaaS)
+
+Function as a Service (FaaS): AWS Lambda, Google ?, Azure ?
+
+* [OpenFaaS] makes it simple to deploy both functions and existing code to Kubernetes. Avoid lock-in through the use of Docker.
+
 ## REST APIs
 
 * [Swagger] is an open-source software set of tools to design, build, document, and use RESTful web services, developed by [SmartBear Software]. It includes automated documentation, code generation, and test-case generation.
-* [Postman]
+* [Postman] is a collaboration platform for API development.
 
 ## GitOps
 
@@ -231,13 +243,15 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Bosh]: https://bosh.io/
 [Bottlerocket]: https://github.com/bottlerocket-os/bottlerocket
 [CD Foundation]: https://cd.foundation/
-[Cloud Foundry]: https://www.cloudfoundry.org/
+[Ceph]: https://ceph.io/
 [Chef]: https://www.chef.io/products/automate
+[Cloud Foundry]: https://www.cloudfoundry.org/
 [CloudFormation]: https://aws.amazon.com/cloudformation/
 [CNCF]: https://www.cncf.io/
 [Codacy]: https://www.codacy.com/
 [Consul]: https://www.consul.io/
 [Containous]: https://containo.us/
+[CSA]: https://cloudsecurityalliance.org/
 [DataDog]: https://www.datadoghq.com/
 [DC/OS]: https://dcos.io/
 [Django]: https://www.djangoproject.com/
@@ -249,12 +263,14 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Flask]: https://palletsprojects.com/p/flask/
 [GitKube]: https://gitkube.sh/
 [GitLab]: https://about.gitlab.com/
+[Gluster]: https://www.gluster.org/
 [Google Cloud]: https://cloud.google.com/
 [HAProxy]: http://www.haproxy.org/
 [HashiCorp]: https://www.hashicorp.com/
 [Helm]: https://helm.sh/
 [Heroku]: https://www.heroku.com/
 [IBM Cloud]: https://www.ibm.com/cloud
+[Infoblox]: https://www.infoblox.com/
 [Istio]: https://istio.io/
 [Jenkins X]: https://jenkins-x.io/
 [Joyent]: https://www.joyent.com/
@@ -270,11 +286,13 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Nelson]: https://getnelson.io/
 [New Relic]: https://newrelic.com/
 [NGINX]: https://www.nginx.com/
+[OpenFaaS]: https://www.openfaas.com/
 [OpenShift]: https://www.openshift.com/products
 [Oracle Cloud]: https://www.oracle.com/uk/cloud/
 [Packer]: https://www.packer.io/
 [PagerDuty]: https://www.pagerduty.com/
 [Postman]: https://www.postman.com/
+[Project Calico]: https://www.projectcalico.org/
 [Puppet]: https://puppet.com/
 [Python]: https://www.python.org/
 [Raft]: https://raft.github.io/
@@ -293,6 +311,7 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Tanzu]: https://tanzu.vmware.com/service-mesh
 [Terraform]: https://www.terraform.io/
 [Tidelift]: https://tidelift.com/
+[Tigera]: https://www.tigera.io/
 [Traefik]: https://containo.us/traefik/
 [Twilio]: https://www.twilio.com/
 [Vault]: https://www.vaultproject.io/
