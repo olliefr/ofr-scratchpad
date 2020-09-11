@@ -1,10 +1,12 @@
 # Cloud Technology
 
-_Unsystematic_ and _incomplete_ lists of **brands** in some ways related to the Cloud.
+_Unsystematic_ and _incomplete_ lists of *vendors*, *products*, *buzzwords*, and *whatever*.
 
 ---
-* **TODO** replace *headings* with *tags*, because an item often belongs to multiple categories
-* **TODO** research and document: `rook`, `locksmith`, `vulcand`, `Doorman`, `CoreDNS`, and `OpenStack`. 
+
+* **TODO** no *headings*, yes *tags*. because *many-to-many* relationship.
+* **TODO** wtf is `rook`, `locksmith`, `vulcand`, `Doorman`, `OpenStack`, `Telegraf`, `Chronograf`, `Kapacitor`
+
 ---
 
 ## A whimsical list of pivotal points
@@ -15,6 +17,7 @@ _Unsystematic_ and _incomplete_ lists of **brands** in some ways related to the 
 * 2007 [Heroku]
 * 2005 Python [Django]
 * 1990 [Python]
+
 ---
 
 * [Cloud Native Computing Foundation (CNCF)][CNCF]
@@ -30,6 +33,11 @@ _Unsystematic_ and _incomplete_ lists of **brands** in some ways related to the 
 * [Alibaba Cloud] claims to have more users in Asia Pacific than any other Cloud platform
 * [IBM Cloud] has _DB2_ databases and _Watson_ AI facilities easily accessible.
 * [Oracle Cloud] presumably is good for ~~getting sued~~ Oracle database? They claim it's much less expensive than [AWS].
+
+## DNS
+
+* [CoreDNS] xx
+* [NS1] xx
 
 ## Infrastructure as Code (IaC)
 
@@ -54,18 +62,17 @@ _Unsystematic_ and _incomplete_ lists of **brands** in some ways related to the 
 * [Veeam] modern data protection for modern challenges
 * [Ceph] provides CephFS &mdash; POSIX-compliant network file system. Provides *Block*, *File*, and *Object*.
 * [Gluster] is a free and open source software scalable network file system. POSIX-compliant. Provides *Block*, *File*, and *Object*.
+* [Elastic Stack] that's Elasticsearch, Kibana, Beats, and Logstash (also known as the ELK Stack). Reliably and securely take data from any source, in any format, then search, analyze, and visualize it in real time. 
+
+[InfluxDB] is the open source time series database component of the *TICK Stack* (Telegraf, InfluxDB, Chronograf, Kapacitor).
 
 ## Key-value pair store
 
 **!!!** Note how much of very advanced functionality is enabled by the *KV pair stores*
 
-* [etcd]
-    
-  A distributed, reliable key-value store for the most critical data of a distributed system
+* [etcd] a distributed, reliable key-value store for the most critical data of a distributed system.
 
-* [Consul] by [HashiCorp]
-
-  Consul is a service mesh solution providing a full featured control plane with service discovery, configuration, and segmentation functionality. Each of these features can be used individually as needed, or they can be used together to build a full service mesh. Consul requires a data plane and supports both a proxy and native integration model. Consul ships with a simple built-in proxy so that everything works out of the box, but also supports 3rd party proxy integrations such as Envoy.
+* [Consul] by [HashiCorp] is a service mesh solution providing a full featured control plane with service discovery, configuration, and segmentation functionality. Each of these features can be used individually as needed, or they can be used together to build a full service mesh. Consul requires a data plane and supports both a proxy and native integration model. Consul ships with a simple built-in proxy so that everything works out of the box, but also supports 3rd party proxy integrations such as Envoy.
     
   Other than providing a distributed key-value store, it also provides features like:
     
@@ -74,7 +81,7 @@ _Unsystematic_ and _incomplete_ lists of **brands** in some ways related to the 
   * Network infrastructure automation
   * Multi-platform service mesh
 
-  [Consul] is built on top of [Serf]
+  Consul is built on top of [Serf]
 
  * [ZooKeeper] by Apache
     
@@ -82,11 +89,11 @@ _Unsystematic_ and _incomplete_ lists of **brands** in some ways related to the 
 
 ## Network
 
+**DDI** is (DNS, DHCP, and IP address) management.
+
 * [OpenFlow](https://en.wikipedia.org/wiki/OpenFlow) is a communications protocol that gives access to the forwarding plane of a network switch or router over the network. It is crucial to the whole *Software-Defined Networking* enterprise.
 * [Infoblox] core network services for the multi-cloud organisation.
 * [Project Calico] by Tigera is an open source networking and network security solution for containers, VMs, and native host-based workloads.
-
-**DDI** is DNS, DHCP, and IP address management.
 
 ## Container orchestration
 
@@ -180,31 +187,53 @@ Function as a Service (FaaS): AWS Lambda, Google ?, Azure ?
 
 ## Communication
 
+* [Gitter] by [GitLab] is a chat and networking platform that helps to manage, grow and connect communities through messaging, content and discovery.
 * [Twilio] global SIM for Iot. Phone numbers. SMS. APIs. Contact Centre platform. And more.
 
 ## Configuration Management
 
 These tools allow us to define the desired state of the systems in an automated way. At any point in time, we want to have a consistent and desired state of systems and software installed on them. This is also referred to as *Infrastructure as Code (IaC)*.
 
-* [Ansible]
+* [Ansible] is agentless
 * [Chef]
-* [Puppet]
-* [Salt]
+* [Puppet] is popular at Google. 
+* [Salt] is most obscure of all mentioned. LinkedIn runs it.
 
 Automated *image builders*:
 
 * [Packer] by [HashiCorp]
 
-## Monitoring and Security
+## Logging, Monitoring, and Security
+
+[cAdvisor] (Container Advisor) provides container users an understanding of the resource usage and performance characteristics of their running containers. It is a running daemon that collects, aggregates, processes, and exports information about running containers. Specifically, for each container it keeps resource isolation parameters, historical resource usage, histograms of complete historical resource usage and network statistics. This data is exported by container and machine-wide.
+
+cAdvisor has native support for [Docker] containers and should support just about any other container type out of the box. We strive for support across the board so feel free to open an issue if that is not the case. cAdvisor's container abstraction is based on [lmctfy]'s so containers are inherently nested hierarchically.
+
+---
 
 * [Codacy] automatically identify issues through static code review analysis. Get notified on security issues, code coverage, code duplication, and code complexity in every commit and pull request, directly from your current workflow.
 * [DataDog] provides intelligent application and service monitoring, particularly suited for debugging microservices.
-* [sysdig] scans for vulnerabilities and provides a view inside containers to alert on anomalous behavior and application health issues. It allows very rapid container and Kubernetes visibility and security onboarding.
-* [Retrace] by [Stackify]
-* [Vault] by HashiCorp (secrets management)
+* [flannel] allocates a subnet lease to each host out of a larger, preconfigured address space.
+* [Fluentd] is an open source data collector for unified logging layer. Fluentd allows you to unify data collection and consumption for a better use and understanding of data.
+* [Grafana] provides pretty dashboards. It is used by thousands of companies to monitor everything from Prometheus & Graphite metrics, logs, applications, power plants, beehives, sourdough starters and custom data sources.
 * [New Relic] observability platform
-* [Sentinel]&emsp;_policy as code_ framework for [HashiCorp] Enterprise Products.
 * [PagerDuty] is a SaaS *incident response platform* for IT departments.
+* [Prometheus] is an open source tool used for system monitoring and alerting. It is suitable for recording *any purely numeric time-series data*. It is primarily written in Go. It was originally developed by SoundCloud and is now one of the graduated projects at the [CNCF] Foundation.
+* [Retrace] by [Stackify]
+* [Sentinel]&emsp;_policy as code_ framework for [HashiCorp] Enterprise Products.
+* [Splunk] includes a family of products aiming to deliver highly scalable and fast real-time insight into enterprise data. It allows for data aggregation and analysis, with unique investigative methods. Provides dashboards!
+* [sysdig] scans for vulnerabilities and provides a view inside containers to alert on anomalous behavior and application health issues. It allows very rapid container and Kubernetes visibility and security onboarding.
+* [Vault] by HashiCorp (secrets management)
+
+## Distributed Tracing
+
+With widespread adoption of microservices comes the need to have facilities to troubleshoot unexpected behaviours and latency issues. This may be very hard, due to the distributed nature of modern systems.
+
+Distributed tracing serves to solve this problem.
+
+* Proprietary: [Zipkin], [Dapper], [HTrace], and [X-Trace]
+* Open: [OpenTelemetry] is a merger of [OpenTracing] (deprecated) and [OpenCensus] (deprecated). It is a [CNCF] project.
+* Open: [Jaeger] is open source, end-to-end distributed tracing tool.
 
 ## Service Mesh
 
@@ -242,6 +271,7 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Azure]: https://azure.microsoft.com/en-gb/
 [Bosh]: https://bosh.io/
 [Bottlerocket]: https://github.com/bottlerocket-os/bottlerocket
+[cAdvisor]: https://github.com/google/cadvisor/
 [CD Foundation]: https://cd.foundation/
 [Ceph]: https://ceph.io/
 [Chef]: https://www.chef.io/products/automate
@@ -251,33 +281,43 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Codacy]: https://www.codacy.com/
 [Consul]: https://www.consul.io/
 [Containous]: https://containo.us/
+[CoreDNS]: https://coredns.io/
 [CSA]: https://cloudsecurityalliance.org/
+[Dapper]: https://medium.com/@suhadevvenkatesh/dapper-googles-secret-weapon-56e43cd61653
 [DataDog]: https://www.datadoghq.com/
 [DC/OS]: https://dcos.io/
 [Django]: https://www.djangoproject.com/
 [Docker]: https://www.docker.com/
 [Docker Swarm]: https://docs.docker.com/engine/swarm/
 [Draft]: https://draft.sh/
+[Elastic Stack]: https://www.elastic.co/elastic-stack
 [Envoy]: https://www.envoyproxy.io/
 [etcd]: https://etcd.io/
+[flannel]: https://github.com/coreos/flannel#flannel
 [Flask]: https://palletsprojects.com/p/flask/
+[Fluentd]: https://www.fluentd.org/
 [GitKube]: https://gitkube.sh/
 [GitLab]: https://about.gitlab.com/
+[Gitter]: https://gitter.im/
 [Gluster]: https://www.gluster.org/
 [Google Cloud]: https://cloud.google.com/
+[Grafana]: https://grafana.com/
 [HAProxy]: http://www.haproxy.org/
 [HashiCorp]: https://www.hashicorp.com/
 [Helm]: https://helm.sh/
 [Heroku]: https://www.heroku.com/
 [IBM Cloud]: https://www.ibm.com/cloud
+[InfluxDB]: https://www.influxdata.com/products/influxdb-overview/
 [Infoblox]: https://www.infoblox.com/
 [Istio]: https://istio.io/
+[Jaeger]: https://www.jaegertracing.io/
 [Jenkins X]: https://jenkins-x.io/
 [Joyent]: https://www.joyent.com/
 [k3s]: https://k3s.io/
 [Kong]: https://konghq.com/
 [Kubernetes]: https://kubernetes.io/
 [Kuma]: https://kuma.io/
+[lmctfy]: https://github.com/google/lmctfy
 [Linkerd]: https://linkerd.io/
 [Maesh]: https://containo.us/maesh/
 [Marathon]: https://mesosphere.github.io/marathon/
@@ -286,13 +326,18 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Nelson]: https://getnelson.io/
 [New Relic]: https://newrelic.com/
 [NGINX]: https://www.nginx.com/
+[NS1]: https://ns1.com/
+[OpenCensus]: https://opencensus.io/
 [OpenFaaS]: https://www.openfaas.com/
 [OpenShift]: https://www.openshift.com/products
+[OpenTelemetry]: https://opentelemetry.io/
+[OpenTracing]: https://opentracing.io/
 [Oracle Cloud]: https://www.oracle.com/uk/cloud/
 [Packer]: https://www.packer.io/
 [PagerDuty]: https://www.pagerduty.com/
 [Postman]: https://www.postman.com/
 [Project Calico]: https://www.projectcalico.org/
+[Prometheus]: https://prometheus.io/
 [Puppet]: https://puppet.com/
 [Python]: https://www.python.org/
 [Raft]: https://raft.github.io/
@@ -305,6 +350,7 @@ This is not a *vendor*, but I have no better place to record this for now.
 [SmartBear Software]: https://smartbear.com/
 [SmartStack]: https://www.smartstack.co.uk/
 [Spinnaker]: https://spinnaker.io/
+[Splunk]: https://www.splunk.com/
 [Stackify]: https://stackify.com/
 [Swagger]: https://swagger.io/
 [sysdig]: https://sysdig.com/
@@ -318,4 +364,5 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Veeam]: https://www.veeam.com/
 [VMWare]: https://www.vmware.com/
 [Weave Flux]: https://www.weave.works/oss/flux/
+[Zipkin]: https://zipkin.io/
 [ZooKeeper]: https://zookeeper.apache.org/
