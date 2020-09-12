@@ -37,6 +37,7 @@ _Unsystematic_ and _incomplete_ lists of *vendors*, *products*, *buzzwords*, and
 ## DNS
 
 * [CoreDNS] xx
+* [DNSimple] xx
 * [NS1] xx
 
 ## Infrastructure as Code (IaC)
@@ -59,12 +60,17 @@ _Unsystematic_ and _incomplete_ lists of *vendors*, *products*, *buzzwords*, and
 
 ## Storage and backup
 
-* [Veeam] modern data protection for modern challenges
-* [Ceph] provides CephFS &mdash; POSIX-compliant network file system. Provides *Block*, *File*, and *Object*.
-* [Gluster] is a free and open source software scalable network file system. POSIX-compliant. Provides *Block*, *File*, and *Object*.
-* [Elastic Stack] that's Elasticsearch, Kibana, Beats, and Logstash (also known as the ELK Stack). Reliably and securely take data from any source, in any format, then search, analyze, and visualize it in real time. 
+Apache [Cassandra] is the right choice when you need scalability and high availability without compromising performance. Linear scalability and proven fault-tolerance on commodity hardware or cloud infrastructure make it the perfect platform for mission-critical data. Cassandra's support for replicating across multiple datacenters is best-in-class, providing lower latency for your users and the peace of mind of knowing that you can survive regional outages.
+
+[Ceph] provides CephFS &mdash; POSIX-compliant network file system. Provides *Block*, *File*, and *Object*.
+
+[Gluster] is a free and open source software scalable network file system. POSIX-compliant. Provides *Block*, *File*, and *Object*.
+
+[Elastic Stack] that's Elasticsearch, Kibana, Beats, and Logstash (also known as the ELK Stack). Reliably and securely take data from any source, in any format, then search, analyze, and visualize it in real time. 
 
 [InfluxDB] is the open source time series database component of the *TICK Stack* (Telegraf, InfluxDB, Chronograf, Kapacitor).
+
+[Veeam] modern data protection for modern challenges. Backup.
 
 ## Key-value pair store
 
@@ -106,7 +112,7 @@ _Unsystematic_ and _incomplete_ lists of *vendors*, *products*, *buzzwords*, and
       is an open-source, distributed operating system based on the Apache [Mesos] distributed systems kernel. DC/OS manages multiple machines in the cloud or on-premises from a single interface; deploys containers, distributed services, and legacy applications into those machines; and provides networking, service discovery and resource management to keep the services running and communicating with each other.
 
     * [Marathon] is a production-grade container orchestration platform for DC/OS and Apache Mesos.
-* [Nomad] by [HashiCorp] is a cluster manager and resource scheduler. It can manage containers, VMs, individual applications, etc...
+* [Nomad] by [HashiCorp] is a *cluster manager* and *resource scheduler*. It can manage containers, VMs, individual applications, etc...
 * Amazon [ECS] elastic cloud service (not Kubernetes). Offers Fargate service which figures out the provisioning automatically, only container images have to be provided by the customer.
 
 ## Operating systems
@@ -168,6 +174,8 @@ In the *Cloud Native* approach, we design a package and run applications on top 
 Function as a Service (FaaS): AWS Lambda, Google ?, Azure ?
 
 * [OpenFaaS] makes it simple to deploy both functions and existing code to Kubernetes. Avoid lock-in through the use of Docker.
+* [Kubeless]
+* [Azure Container Instances]
 
 ## REST APIs
 
@@ -235,6 +243,8 @@ Distributed tracing serves to solve this problem.
 * Open: [OpenTelemetry] is a merger of [OpenTracing] (deprecated) and [OpenCensus] (deprecated). It is a [CNCF] project.
 * Open: [Jaeger] is open source, end-to-end distributed tracing tool.
 
+[Wavefront], now called VMware Tanzu Observability (bleurgh).
+
 ## Service Mesh
 
 * [Consul] by [HashiCorp] is an open source project aiming to provide a secure multi-cloud service networking through automated network configuration and service discovery.
@@ -272,6 +282,7 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Bosh]: https://bosh.io/
 [Bottlerocket]: https://github.com/bottlerocket-os/bottlerocket
 [cAdvisor]: https://github.com/google/cadvisor/
+[Cassandra]: https://cassandra.apache.org/
 [CD Foundation]: https://cd.foundation/
 [Ceph]: https://ceph.io/
 [Chef]: https://www.chef.io/products/automate
@@ -287,6 +298,7 @@ This is not a *vendor*, but I have no better place to record this for now.
 [DataDog]: https://www.datadoghq.com/
 [DC/OS]: https://dcos.io/
 [Django]: https://www.djangoproject.com/
+[DNSimple]: https://dnsimple.com/
 [Docker]: https://www.docker.com/
 [Docker Swarm]: https://docs.docker.com/engine/swarm/
 [Draft]: https://draft.sh/
@@ -363,6 +375,7 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Vault]: https://www.vaultproject.io/
 [Veeam]: https://www.veeam.com/
 [VMWare]: https://www.vmware.com/
+[Wavefront]: https://www.wavefront.com/
 [Weave Flux]: https://www.weave.works/oss/flux/
 [Zipkin]: https://zipkin.io/
 [ZooKeeper]: https://zookeeper.apache.org/
