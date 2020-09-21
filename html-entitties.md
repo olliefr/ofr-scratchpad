@@ -16,6 +16,7 @@ The [Unicode Character Table](https://unicode-table.com/en/) has HTML codes for 
 * `&reg;` is _registered trademark sign_ &reg;
 * `&copy;` is _copyright sign_ &copy;
 * `&euro;` and `&yen;` are &euro; and &yen;
+* `&infin;` is _infinity sign_ &infin;
 
 ## Whitespace
 
