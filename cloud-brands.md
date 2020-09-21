@@ -230,6 +230,7 @@ cAdvisor has native support for [Docker] containers and should support just abou
 * [Retrace] by [Stackify]
 * [Sentinel]&emsp;_policy as code_ framework for [HashiCorp] Enterprise Products.
 * [Splunk] includes a family of products aiming to deliver highly scalable and fast real-time insight into enterprise data. It allows for data aggregation and analysis, with unique investigative methods. Provides dashboards!
+* [Styra] provides *declarative authorization* for *Cloud Native* security. It is made by the founders and maintainers of [Open Policy Agent].
 * [sysdig] scans for vulnerabilities and provides a view inside containers to alert on anomalous behavior and application health issues. It allows very rapid container and Kubernetes visibility and security onboarding.
 * [Vault] by HashiCorp (secrets management)
 
@@ -364,6 +365,7 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Spinnaker]: https://spinnaker.io/
 [Splunk]: https://www.splunk.com/
 [Stackify]: https://stackify.com/
+[Styra]: https://www.styra.com/
 [Swagger]: https://swagger.io/
 [sysdig]: https://sysdig.com/
 [Tanzu]: https://tanzu.vmware.com/service-mesh
