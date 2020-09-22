@@ -33,6 +33,10 @@ _Unsystematic_ and _incomplete_ lists of *vendors*, *products*, *buzzwords*, and
 * [Alibaba Cloud] claims to have more users in Asia Pacific than any other Cloud platform
 * [IBM Cloud] has _DB2_ databases and _Watson_ AI facilities easily accessible.
 * [Oracle Cloud] presumably is good for ~~getting sued~~ Oracle database? They claim it's much less expensive than [AWS].
+* [DigitalOcean] "developer's cloud"
+* [Vultr] "the infrastructure cloud"
+* [Linode] "developer's cloud"
+* [Imply] Cloud &mdash; managed service for Druid-based storage, query and visualization.
 
 ## DNS
 
@@ -320,6 +324,7 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Helm]: https://helm.sh/
 [Heroku]: https://www.heroku.com/
 [IBM Cloud]: https://www.ibm.com/cloud
+[Imply]: https://imply.io/
 [InfluxDB]: https://www.influxdata.com/products/influxdb-overview/
 [Infoblox]: https://www.infoblox.com/
 [Istio]: https://istio.io/
@@ -332,6 +337,7 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Kuma]: https://kuma.io/
 [lmctfy]: https://github.com/google/lmctfy
 [Linkerd]: https://linkerd.io/
+[Linode]: https://www.linode.com/
 [Maesh]: https://containo.us/maesh/
 [Marathon]: https://mesosphere.github.io/marathon/
 [Mesos]: https://mesos.apache.org/
