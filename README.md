@@ -8,6 +8,7 @@ A personal collection of small, unrelated notes and code examples.
 
 ## Pinned
 
+* [Introduction to Go course notes](golang-course1.md) **LONGREAD**
 * [Python app templates](python-application-structure.md)
 
 ---
