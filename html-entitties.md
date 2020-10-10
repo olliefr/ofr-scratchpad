@@ -17,6 +17,7 @@ The [Unicode Character Table](https://unicode-table.com/en/) has HTML codes for 
 * `&copy;` is _copyright sign_ &copy;
 * `&euro;` and `&yen;` are &euro; and &yen;
 * `&infin;` is _infinity sign_ &infin;
+* `&sube;` is set notation _subset_ symbol &sube;
 
 ## Whitespace
 
