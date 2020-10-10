@@ -210,6 +210,7 @@ These tools allow us to define the desired state of the systems in an automated 
 * [Chef]
 * [Puppet] is popular at Google. 
 * [Salt] is most obscure of all mentioned. LinkedIn runs it.
+* [Bitnami] packaged applications.
 
 Automated *image builders*:
 
@@ -284,6 +285,7 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Atlantis]: https://www.runatlantis.io/
 [AWS]: https://aws.amazon.com/
 [Azure]: https://azure.microsoft.com/en-gb/
+[Bitnami]: https://bitnami.com/
 [Bosh]: https://bosh.io/
 [Bottlerocket]: https://github.com/bottlerocket-os/bottlerocket
 [cAdvisor]: https://github.com/google/cadvisor/
