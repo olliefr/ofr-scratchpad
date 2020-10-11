@@ -1059,7 +1059,7 @@ p1 := new(Person)
 Or use a *struct literal*:
 
 ```go
-p1 := Person(name: "Gruffalo", addr: "Deep Dark Wood", phone: "123")
+p1 := Person{name: "Gruffalo", addr: "Deep Dark Wood", phone: "123"}
 ```
 
 ## **TODO** Revision examples
@@ -1151,7 +1151,7 @@ It's **very** useful to have these packages ready for use.
 A `struct` in Go:
 
 ```go
-p1 := Person(name: "Gruffalo", addr: "Deep Dark Wood", phone: "123")
+p1 := Person{name: "Gruffalo", addr: "Deep Dark Wood", phone: "123"}
 ```
 
 As a *JSON* object:
@@ -1180,11 +1180,21 @@ type Person struct {
 }
 ```
 
-Define a value of that type:
+Define a value of that type using *field-value initialisers*
 
 ```go
-p1 := Person(name: "Gruffalo", addr: "Deep Dark Wood", phone: "123")
+p1 := Person{name: "Gruffalo", addr: "Deep Dark Wood", phone: "123"}
 ```
+
+Note `{}` in the definition.
+
+Could have used *value initialisers* only:
+
+``` go
+p1 := Person{"Gruffalo", "Deep Dark Wood", "123"}
+```
+
+Note, that *field-value initalisers*, and *value initialisers* cannot be mixed, that is either all or no field names must be provided.
 
 Marshall into JSON format:
 
