@@ -1027,7 +1027,7 @@ Example: `Person struct`. Each `person` has name, address, and a phone no.
 Can define a `struct` *type*, analogous to `type Celsius int` seen before.
 
 ```go
-type struct Person {
+type Person struct {
     name string
     addr string
     phone string
@@ -1173,7 +1173,7 @@ I remember, that *marshalling* and *serialisation* aren't exactly the same thing
 A type definition in Go:
 
 ```go
-type struct Person {
+type Person struct {
     name string
     addr string
     phone string
