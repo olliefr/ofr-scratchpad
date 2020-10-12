@@ -1,12 +1,14 @@
 
 # Golang
 
-[Getting Started with Go](https://www.coursera.org/learn/golang-getting-started) course notes by Oliver Frolovs, 2020.
+[Getting Started with Go][go1] course notes by Oliver Frolovs, 2020.
 
 * **Not a beginner's course!** It assumes a good understanding of basic principles of programming.
 * I watched the videos at 1.25 speed and skipped some parts, skim-reading the transcripts instead.
 * Good choice of topics and level of depth. *Pointers* covered before more pedestrian data types.
 * The *scope of variables* (W2) is explained with the right balance of formalism and accessibility. And very concisely.
+
+[go1]: https://www.coursera.org/learn/golang-getting-started
 
 ## Setting up the environment
 
