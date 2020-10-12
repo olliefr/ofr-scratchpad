@@ -8,13 +8,11 @@ A personal collection of small, unrelated notes and code examples.
 
 ## Pinned
 
-* 2 of 3, [*Functions, Methods, and Interfaces in Go* course notes][go2] **LONGREAD**
-* 1 of 3, [*Introduction to Go* course notes][go1] **LONGREAD**
+* 2 of 3, ["Functions, Methods, and Interfaces in Go" course notes](golang-course2.md) **LONGREAD**
+* 1 of 3, ["Introduction to Go" course notes](golang-course1.md) **LONGREAD**
 * [AWS new account checklist](aws-new-account-checklist.md)
 * [Python app templates](python-application-structure.md)
 
-[go2]: golang-course2.md
-[go1]: golang-course1.md
 ---
 
 * [Enable HTTPS in nginx web server using Let's Encrypt CA](tls-nginx.md)
