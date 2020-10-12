@@ -8,10 +8,12 @@ A personal collection of small, unrelated notes and code examples.
 
 ## Pinned
 
+* 2 of 3, [*Functions, Methods, and Interfaces in Go* course notes][go2] **LONGREAD**
 * 1 of 3, [*Introduction to Go* course notes][go1] **LONGREAD**
 * [AWS new account checklist](aws-new-account-checklist.md)
 * [Python app templates](python-application-structure.md)
 
+[go2]: golang-course2.md
 [go1]: golang-course1.md
 ---
 
