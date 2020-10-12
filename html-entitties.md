@@ -18,6 +18,7 @@ The [Unicode Character Table](https://unicode-table.com/en/) has HTML codes for 
 * `&euro;` and `&yen;` are &euro; and &yen;
 * `&infin;` is _infinity sign_ &infin;
 * `&sube;` is set notation _subset_ symbol &sube;
+* `&grave;` is a _backtick_ symbol &grave;
 
 ## Whitespace
 
