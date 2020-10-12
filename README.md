@@ -15,6 +15,7 @@ A personal collection of small, unrelated notes and code examples.
 
 ---
 
+* [Search a keyword in all Go files using `grep`](grep-all-go.md)
 * [Enable HTTPS in nginx web server using Let's Encrypt CA](tls-nginx.md)
 * [Windows 10 Driver Store and Core Isolation](windows-driver-store.md)
 * [Don't block an open PDF file for saving and reload on save](pdf-viewer-reload.md)
