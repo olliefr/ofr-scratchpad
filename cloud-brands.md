@@ -168,6 +168,8 @@ In the *Cloud Native* approach, we design a package and run applications on top 
 * [Jenkins X]
 
   Jenkins is a very popular tool for CI/CD that can be used on Kubernetes as well. But the Jenkins team built a new cloud-native CI/CD tool, Jenkins X, from the ground up. The new tool leverages Docker, Draft, and Helm to deploy a Jenkins CI/CD pipeline directly on Kubernetes, by simplifying and automating full CI/CD pipelines. In addition, Jenkins X automates the preview of pull requests for fast feedback before changes are merged, and then it automates the environment management and the promotion of new application versions between different environments. Jenkins X is a graduated project of [CD Foundation].
+  
+* [Tekton] by Google is a powerful yet flexible Kubernetes-native open-source framework for creating continuous integration and delivery (CI/CD) systems. It lets you build, test, and deploy across multiple cloud providers or on-premises systems by abstracting away the underlying implementation details.
 
 * [Spinnaker]
 
@@ -377,6 +379,7 @@ This is not a *vendor*, but I have no better place to record this for now.
 [Swagger]: https://swagger.io/
 [sysdig]: https://sysdig.com/
 [Tanzu]: https://tanzu.vmware.com/service-mesh
+[Tekton]: https://cloud.google.com/tekton
 [Terraform]: https://www.terraform.io/
 [Tidelift]: https://tidelift.com/
 [Tigera]: https://www.tigera.io/
