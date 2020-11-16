@@ -15,6 +15,7 @@ A personal collection of small, unrelated notes and code examples.
 
 ---
 
+* [Push a local branch to the remote Git repo under a different branch name](git-push-different-branch.md)
 * [Mains voltage](voltage-mains.md)
 * [Search a keyword in all Go files using `grep`](grep-all-go.md)
 * [Enable HTTPS in nginx web server using Let's Encrypt CA](tls-nginx.md)
