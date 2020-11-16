@@ -8,6 +8,7 @@ A personal collection of small, unrelated notes and code examples.
 
 ## Pinned
 
+* 3 of 3, ["Concurrency in Go" course notes](golang-course3.md) &ndash; **LONGREAD** and *very raw*
 * 2 of 3, ["Functions, Methods, and Interfaces in Go" course notes](golang-course2.md) &ndash; **LONGREAD**
 * 1 of 3, ["Introduction to Go" course notes](golang-course1.md) &ndash; **LONGREAD**
 * [AWS new account checklist](aws-new-account-checklist.md)
