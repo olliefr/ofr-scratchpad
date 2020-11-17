@@ -16,6 +16,7 @@ A personal collection of small, unrelated notes and code examples.
 
 ---
 
+* [Ways of working with Git](git-workflow.md)
 * [Push a local branch to the remote Git repo under a different branch name](git-push-different-branch.md)
 * [Mains voltage](voltage-mains.md)
 * [Search a keyword in all Go files using `grep`](grep-all-go.md)
