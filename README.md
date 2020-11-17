@@ -16,6 +16,7 @@ A personal collection of small, unrelated notes and code examples.
 
 ---
 
+* [Get snapshot of current processes (Linux, ps)](ps-linux-bsd.md)
 * [Ways of working with Git](git-workflow.md)
 * [Push a local branch to the remote Git repo under a different branch name](git-push-different-branch.md)
 * [Mains voltage](voltage-mains.md)
