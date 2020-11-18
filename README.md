@@ -16,6 +16,7 @@ A personal collection of small, unrelated notes and code examples.
 
 ---
 
+* [Golang raw strings and error wrapping](golang-snippet-1.md)
 * [File types in Linux](linux-file-types.md)
 * [Get snapshot of current processes (Linux, ps)](ps-linux-bsd.md)
 * [Ways of working with Git](git-workflow.md)
