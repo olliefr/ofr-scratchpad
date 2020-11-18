@@ -1,7 +1,8 @@
 # File types in Linux
 
 * Block device, such as `/dev/sda`
-* Symbolic link 
+* Symbolic link
+* Hard link
 * Ordinary file
 * Directory
 
