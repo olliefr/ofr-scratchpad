@@ -2,6 +2,11 @@
 
 _Unsystematic_ and _incomplete_ lists of *vendors*, *products*, *buzzwords*, and *whatever*.
 
+
+## Update
+
+I have just discovered the [Cloud Native Interactive Landscape](https://landscape.cncf.io/) which makes this document obsolete.
+
 ---
 
 * **TODO** no *headings*, yes *tags*. because *many-to-many* relationship.
