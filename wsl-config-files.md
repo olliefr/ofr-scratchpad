@@ -32,7 +32,20 @@ C:\ PS> wsl.exe --shutdown
 
 I created a static configuration for DNS, pointing to Cloudflare:
 
-```Shell
+**UPDATE** It seems that now `/etc/resolv.conf` is a symlink for `../run/resolvconf/resolv.conf`.
+```shell
+$ sudo rm /etc/resolv.conf
+$ sudo cat > /etc/resolv.conf
+# Resolve using Cloudflare DNS, ignoring
+# VPN settings in Windows
+nameserver 1.1.1.1
+nameserver 1.0.0.1
+<Ctrl+D>
+```
+
+It used to be the case, that:
+
+```shell
 $ sudo mv /etc/resolv.conf /etc/resolv.conf.old
 $ sudo cat > /etc/resolv.conf
 nameserver 1.1.1.1
