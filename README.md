@@ -16,6 +16,7 @@ A personal collection of small, unrelated notes and code examples.
 
 ---
 
+* [Force Git to set e-mail address in working copy](git-no-global-email.md)
 * [Golang Gock HTTP traffic mocking and testing](golang-gock-workflow.md)
 * [Golang raw strings and error wrapping](golang-snippet-1.md)
 * [File types in Linux](linux-file-types.md)
