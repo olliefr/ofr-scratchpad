@@ -36,7 +36,7 @@ A personal collection of small, unrelated notes and code examples.
 * [Setting up a productive Python environment](python-productivity.md)
 * [Cowsay a fortune in colour on login](linux-fortune-cowsay-lolcat.md)
 * [Storing configuration in a class in Python](python-class-as-config.md)
-* [WSL configuration](wsl-config-files.md)
+* [WSL configuration and host resources limit](wsl-config-files.md)
 * [Copying files with complex names using `scp`](scp-complex-file-names.md)
 * [Print directory tree in Linux](linux-print-directory-tree.md)
 * [Handling *leap seconds* with Network Time Protocol (NTP)](ntp.md)
