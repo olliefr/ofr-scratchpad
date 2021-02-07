@@ -17,6 +17,12 @@ swap=0
 # For more information: https://docs.microsoft.com/en-us/windows/wsl/wsl-config
 ```
 
+To apply the changes to `.wslconfig`, restart WSL2 from PowerShell _with admin rights_:
+
+```
+Restart-Service LxssManager
+```
+
 Reference: [Configure global options with .wslconfig](https://docs.microsoft.com/en-us/windows/wsl/wsl-config#configure-global-options-with-wslconfig)
 
 ## DNS & VPN
