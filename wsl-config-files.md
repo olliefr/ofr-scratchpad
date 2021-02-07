@@ -1,5 +1,26 @@
 # WSL configuration
 
+## Limit host resources consumption
+
+You can configure global WSL options by placing a `.wslconfig` file into the root directory of your users folder: `%HOMEPATH%\.wslconfig`.
+
+These settings affect the VM that powers _any_ WSL2 distribution.
+
+I limit the CPU and RAM resources, and turn the swap file off:
+
+```
+[wsl2]
+memory=12GB
+processors=4
+swap=0
+
+# For more information: https://docs.microsoft.com/en-us/windows/wsl/wsl-config
+```
+
+Reference: [Configure global options with .wslconfig](https://docs.microsoft.com/en-us/windows/wsl/wsl-config#configure-global-options-with-wslconfig)
+
+## DNS & VPN
+
 I had a problem with DNS resolving in my **Ubuntu** running under WSL when Mullvad VPN was active. Somehow, WSL did not pick up the changes to DNS configuration from Windows, and the VPN would block access to the "default" DNS servers.
 
 Since I don't require traffic from WSL to go through the VPN, especially so for DNS queries, I dug into WSL configuration looking for information on how to set up the DNS manually.
