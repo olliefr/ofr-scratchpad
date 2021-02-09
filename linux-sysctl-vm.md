@@ -1,6 +1,12 @@
 # Linux kernel VM settings
 
-Some settings which I find to be of interest...
+Some settings of _Virtual Memory_ kernel subsystem which I find to be of interest. 
+
+The default values can be changed in a number of ways:
+
+* directly via the pseudofilesystem directory `/proc/sys/vm`;
+* at boot time via `/etc/sysctl.conf`, or the drop-ins directory `/etc/sysctl.d/`;
+* using the `sysctl` utility.
 
 ## vm.oom_kill_allocating_task
 
