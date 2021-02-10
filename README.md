@@ -16,6 +16,7 @@ A personal collection of small, unrelated notes and code examples.
 
 ---
 
+* [HCL type expressions extension](golang-hcl-typeexpr.md)
 * [Useful Linux kernel memory-related settings](linux-sysctl-vm.md)
 * [Force Git to set e-mail address in working copy](git-no-global-email.md)
 * [Golang Gock HTTP traffic mocking and testing](golang-gock-workflow.md)
