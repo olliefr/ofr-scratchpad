@@ -16,6 +16,7 @@ A personal collection of small, unrelated notes and code examples.
 
 ---
 
+* [Adventures in IPv6](ipv6.md)
 * [Fira Code font settings for VSCode](vscode-fira-code.md)
 * [HCL type expressions extension](golang-hcl-typeexpr.md)
 * [Useful Linux kernel memory-related settings](linux-sysctl-vm.md)
