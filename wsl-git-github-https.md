@@ -67,5 +67,6 @@ Relevant GitHub documentation pages:
 * [About authentication to GitHub](https://docs.github.com/en/github/authenticating-to-github/about-authentication-to-github)
 * [Creating a personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)
 
+## Update
 
-&mdash; Oliver Frolovs, 2020
+Note, that now there is also official [GitHub CLI](https://cli.github.com/), which has `auth` command. It _probably_ sets up Git configuration as well. I need to test this out and update this document.
