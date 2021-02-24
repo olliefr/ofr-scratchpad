@@ -1,6 +1,14 @@
 # Public key cryptography: GPG, OpenPGP, PGP
 
-Christ on a bike, this is messy!
+## Rationale
+
+I wanted to set up commit signature verification for GitHub to get a nice green **Verified** badge next to my commits. GitHub even has a guide for this: [Managing commit signature verification][github]. How difficult could that be?
+
+Christ on a bike, that was quite an adventure.
+
+Basically, I wanted to generate a PGP key _without a passphrase_ (or clear the passphrase after the keys had been generated) and make Git client pick up that key and use it to sign my commits. My whole disk is encrypted, and I am not going to be using this PGP key for anything else (it's easily revokeable on GitHub), so I believe this is a good compromise between security and usability.
+
+[github]: https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification
 
 ## History
 
@@ -29,11 +37,13 @@ GPG, also known as [GNU Privacy Guard][gpg] is a complete and free implementatio
 [rfc4880]: https://tools.ietf.org/html/rfc4880
 [gpg]: https://en.wikipedia.org/wiki/GNU_Privacy_Guard
 
-## Useful terminology
+## Where we are now...
 
 When people say "PGP keys" or "PGP certificates" they _most often_ mean OpenPGP-compliant keys. These keys are _often_ produced by the free and open GPG program. But there are other implementations. The point is that although the term "PGP key" has remained, the original PGP _program_ is pretty much history. And OpenPGP is a standard, not a program.
 
-## Using GPG on Linux
+Lots and lots of "advice" on GPG on the Internet is of grotesquely bad quality. It either refers to the obsolete versions of software, or shows almost complete lack of understanding of how GPGv2 operates. The manual for GPGv2 is not much help, as it's very concise, reference-style, and IMO not very user friendly. So I had a hard time figuring it out. Scavenging through all available sources of information, I developed an understanding of the mental model behind GPGv2 set of tools, and the actual solution turned out to be very simple.
+
+## Install GPG on Linux
 
 It doesn't get any better when it comes to Ubuntu package names!
 
