@@ -14,7 +14,12 @@ A personal collection of small, unrelated notes and code examples.
 * [AWS new account checklist](aws-new-account-checklist.md)
 * [Python app templates](python-application-structure.md)
 
----
+
+## Git and GitHub
+
+* [How to rebase your current Git branch on `master`](git-rebase-main.md)
+
+## Other shenanigans
 
 * [Adventures in IPv6](ipv6.md)
 * [Fira Code font settings for VSCode](vscode-fira-code.md)
