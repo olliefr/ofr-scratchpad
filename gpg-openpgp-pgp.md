@@ -32,3 +32,24 @@ GPG, also known as [GNU Privacy Guard][gpg] is a complete and free implementatio
 ## Useful terminology
 
 When people say "PGP keys" or "PGP certificates" they _most often_ mean OpenPGP-compliant keys. These keys are _often_ produced by the free and open GPG program. But there are other implementations. The point is that although the term "PGP key" has remained, the original PGP _program_ is pretty much history. And OpenPGP is a standard, not a program.
+
+## Using GPG on Linux
+
+It doesn't get any better when it comes to Ubuntu package names!
+
+As of Ubuntu 20.04 LTS:
+
+> Install `gnupg` and ignore the rest!
+
+The mess is due to:
+
+* an old, obsolete version of GPG (version `1`) still being distributed, for some reason, alongside a more modern version `2`.
+* the modern version `2` is offered in two flavours: a bare minimum (`gpg`), and the full suite (`gnupg`)
+
+For the adventurous, this is the actual situation with the packages:
+
+* There is a `gpg` package which installs the main GPG application. This is useful in itself, but check for `gnupg` below.
+* There is also a `gnupg` package, which is a superset of the above package. It provides the full suite of GPG applications.
+* There is also a `gnupg1` package which is for an obsolte version of the suite, so don't use it.
+* There is also a `gnupg2` package, which a _dummy transitional name_ for `gnupg`, so don't use it.
+* There is _no_ `gpg2` package.
