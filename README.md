@@ -54,6 +54,7 @@ A personal collection of small, unrelated notes and code examples.
  
 ## Other shenanigans
 
+* [Running Postgres in Docker on WSL2](docker-postgres.md)
 * [The big or otherwise interesting names in Cloud technology](cloud-brands.md)
 * [Adventures in IPv6](ipv6.md)
 * [Fira Code font settings for VSCode](vscode-fira-code.md)
