@@ -22,6 +22,7 @@ A personal collection of small, unrelated notes and code examples.
 
 ## Git and GitHub
 
+* [Ignore some settings in all repositories](git-gitignore-global.md)
 * [A high-level overview of different Git workflows](git-workflow.md)
 * [How to rebase your current Git branch on `master`](git-rebase-main.md)
 * [How to set up Git to require an e-mail address on per-repo basis](git-no-global-email.md)
