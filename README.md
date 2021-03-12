@@ -22,6 +22,7 @@ A personal collection of small, unrelated notes and code examples.
 
 ## Git and GitHub
 
+* [Smarter force-pushing in Git](git-force-with-lease.md)
 * [Reset local branch to remote branch `HEAD`](git-reset-to-remote.md)
 * [Ignore some settings in all repositories](git-gitignore-global.md)
 * [A high-level overview of different Git workflows](git-workflow.md)
