@@ -15,7 +15,7 @@ git branch --set-upstream-to=origin/master master
 git pull --allow-unrelated-histories
 
 # Push the results of the merge back to GitHub
-$git push origin master
+git push origin master
 ```
 
 That's it.
