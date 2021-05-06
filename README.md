@@ -22,6 +22,7 @@ A personal collection of small, unrelated notes and code examples.
 
 ## Git and GitHub
 
+* [Tag a release or overwrite an existing tag](git-tag-release.md)
 * [Change default branch name for `git init`](git-set-default-branch-name.md)
 * [Smarter force-pushing in Git](git-force-with-lease.md)
 * [Reset local branch to remote branch `HEAD`](git-reset-to-remote.md)
