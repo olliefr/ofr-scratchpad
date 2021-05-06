@@ -1,4 +1,4 @@
-# How to upgrade a single package
+# How to upgrade a single package only (with `apt`)
 
 ```shell
 sudo apt update
