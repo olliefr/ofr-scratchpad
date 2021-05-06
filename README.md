@@ -37,6 +37,7 @@ A personal collection of small, unrelated notes and code examples.
 
 ## Linux
 
+* [How to upgrade a single package only (with `apt`)](linux-apt-upgrade-single-package.md)
 * [Useful Linux kernel memory-related settings](linux-sysctl-vm.md)
 * [File types in Linux](linux-file-types.md)
 * [Get snapshot of current processes (Linux, ps)](ps-linux-bsd.md)
