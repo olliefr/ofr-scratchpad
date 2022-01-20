@@ -10,3 +10,5 @@ git config --global user.useConfigOnly true
 Now email addresses _have to_ be set on a per-repo basis.
 
 Source: [StackOverflow](https://stackoverflow.com/a/49671582)
+
+Also, see [multiple personalities in Git](https://collectiveidea.com/blog/archives/2016/04/04/multiple-personalities-in-git).
