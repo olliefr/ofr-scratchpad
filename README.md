@@ -16,6 +16,7 @@ A personal collection of small, unrelated notes and code examples.
 
 ## Go
 
+* [Compile and install Go packages](golang-go-install.md)
 * [HCL type expressions extension](golang-hcl-typeexpr.md)
 * [Golang Gock HTTP traffic mocking and testing](golang-gock-workflow.md)
 * [Golang raw strings and error wrapping](golang-snippet-1.md)
